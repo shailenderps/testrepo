@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ModifyTheChatLandingPage-D77C881A" xml:lang="en-US">
+<title>Edit the Chat Landing Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Edit the chat landing page by copying code from the reference implementation
+chat landing page.</p>
+<ol>
+<li><p>Edit the file:</p> <filepath>/cp/customer/development/views/pages/chat/chat_landing.php</filepath
+></li>
+<li><p>Add the chat queue by replacing this line:</p><codeblock>&lt;rn:widget path="chat/ChatQueueSearch" popup_window="true"/></codeblock
+><p>with:</p><codeblock>&lt;rn:condition config_check="OKCS_ENABLED == true">
+&lt;rn:widget path="chat/ChatQueueSearch" report_page_url="/app/search" popup_window="true" />
+&lt;rn:condition_else>
+&lt;rn:widget path="chat/ChatQueueSearch" popup_window="true" />
+&lt;/rn:condition></codeblock></li>
+</ol>
+</conbody>
+</concept>

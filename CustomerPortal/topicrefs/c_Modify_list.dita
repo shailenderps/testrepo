@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ModifyNotificationsList-D77D9430" xml:lang="en-US">
+<title>Enable Users to Manage Answer Notifications</title>
+<conbody>
+<p>You must edit the notifications (<filepath>list.php</filepath>)
+page so that users can manage their notifications. Users can see notifications
+they have subscribed to and delete a subscription from the notifications
+page.</p>
+<p>You can edit the notifications page in your current instance to
+include code from the reference implementation notifications page.</p>
+<ol>
+<li><p>Edit the file:</p> <filepath>/cp/customer/development/views/pages/account/notif/list.php</filepath
+></li>
+<li><p>Add the loading indicator by adding this code:</p><codeblock
+>&lt;div id="rn_LoadingIndicator" class="rn_Browse">
+   &lt;rn:widget path="okcs/LoadingIndicator"/>
+&lt;/div></codeblock><p>before this code:</p><codeph>&lt;div class=”rn_PageContent”></codeph
+></li>
+<li><p>Add the answer notification manager widget by adding this code:</p
+><codeblock>&lt;rn:widget path="okcs/OkcsAnswerNotificationManager" view_type="list"/></codeblock
+><p>within this section:</p><codeblock>&lt;div class=”rn_PageContent”></codeblock
+></li>
+</ol>
+<p>Here’s an example of the reference implementation notifications
+(<filepath>list.php</filepath>) page:</p>
+<codeblock>&lt;rn:meta title="#rn:msg:NOTIFICATIONS_HDG#" template="okcs_standard.php" login_required="true" force_https="true"/>
+&lt;div class="rn_Hero">
+    &lt;div class="rn_Container">
+        &lt;h1>#rn:msg:NOTIFICATIONS_HDG#&lt;/h1>
+    &lt;/div>
+&lt;/div>
+&lt;div id="rn_LoadingIndicator" class="rn_Browse">
+    &lt;rn:widget path="okcs/LoadingIndicator"/>
+&lt;/div>
+&lt;div class="rn_PageContent rn_AccountNotifications rn_Container">
+    &lt;h2>#rn:msg:ANS_NOTIFICATIONS_LBL#&lt;/h2>
+    &lt;rn:widget path="okcs/OkcsAnswerNotificationManager" view_type="list"/> 
+&lt;/div></codeblock>
+</conbody>
+</concept>

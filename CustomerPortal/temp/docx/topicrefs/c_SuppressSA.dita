@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept-1-DCB71FD2" xml:lang="en-US" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="concept:1;5:51">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="title:1;6:8">Suppress SmartAssistant Filters</title>
+<prolog class="- topic/prolog " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="prolog:1;7:9">
+<metadata class="- topic/metadata " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="metadata:1;8:11"><keywords class="- topic/keywords " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="keywords:1;8:21"><indexterm class="- topic/indexterm " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="indexterm:1;8:32"/></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="conbody:1;10:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="p:1;11:4">SmartAssistant uses the user-provided product and category as search
+filters to restrict results by default. You can override the default
+filtering to use only product, category, or neither to filter search
+results.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="p:2;15:4">SmartAssistant uses the user-provided product and category as search
+filters to restrict results. By default, it uses both product and
+category. When using SmartAssistant to search, you can override the
+default filtering to use only product, category, or neither.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="p:3;19:4">A hook in the file <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="codeph:1;19:31">hooks.php</codeph>, which contains hook
+definitions, calls a method defined in <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="codeph:2;20:48">Sample.php</codeph>. To apply a specific choice of filter, or to ignore both filters,
+modify the files <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="codeph:3;22:26">hooks.php</codeph> and <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="codeph:4;22:57">Sample.php</codeph>.</p>
+<ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="ol:1;24:5">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="li:1;25:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="p:4;25:8">Edit the file:</p> <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="filepath:1;25:37">cp/customer/development/config/hooks.php</filepath></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="li:2;27:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="p:5;27:8">Add the following code at the end of the file:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="codeblock:1;28:2">$rnHooks['pre_retrieve_smart_assistant_answers'][] = array(  'class' =&gt; 'Sample', // Name of the custom model  'function' =&gt; 'retrieveSmartAssistantRequest',  'filepath' =&gt; ''  );</codeblock></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="li:3;30:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="p:6;30:8">Edit the file:</p> <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="filepath:2;30:37">cp/customer/development/models/custom/Sample.php</filepath></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="li:4;32:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="p:7;32:8">Add the following code at the end of the file:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_SuppressSA.dita" xtrc="codeblock:2;33:2">&lt;?php
+namespace Custom\Models;  
+require_once CPCORE . 'Models/Okcs.php';  
+
+class Sample extends \RightNow\Models\Okcs 
+{
+function __construct()  
+{
+parent::__construct(); 
+}
+public function retrieveSmartAssistantRequest(&amp;$hookData) {
+// Second argument determines which SA results to show. Possible values are 'Product', 'Category', 'ProductAndCategory', 'None'.
+parent::retrieveSmartAssistantRequest(&amp;$hookData, 'ProductAndCategory');
+}
+}</codeblock></li>
+</ol>
+</conbody>
+</concept>

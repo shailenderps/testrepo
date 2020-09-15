@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ImplementingTheKnowledgeAdvancedSta-21529326" xml:lang="en">
+<title>Implement the Knowledge Advanced Widgets</title>
+<shortdesc></shortdesc>
+<conbody>
+<p>Your B2C Service instance includes Knowledge widgets. They
+enable users to access knowledge features, including content type
+subscription, suggested searches, filter search by product and category,
+and search result facets.</p>
+<p>You can implement widgets and configure them to tailor knowledge
+for your organization and users. You configure widgets by adding or
+editing the widget attributes on the pages in your existing instance.
+You can see the list of knowledge widgets by reading the documentation
+on Customer Portal administration page: <filepath>https://&lt;your_site>/ci/admin/docs/widgets/standard/okcs</filepath
+></p>
+</conbody>
+</concept>

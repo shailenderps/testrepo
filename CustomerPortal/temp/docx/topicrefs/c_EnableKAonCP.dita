@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="enablekaoncp" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_EnableKAonCP.dita" xtrc="concept:1;5:42">
+
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_EnableKAonCP.dita" xtrc="title:1;7:8">Overview of Knowledge Advanced Implementation</title>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_EnableKAonCP.dita" xtrc="conbody:1;8:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_EnableKAonCP.dita" xtrc="p:1;9:4">You can implement Knowledge Advanced in Customer Portal to enable
+self-service users to quickly get answers to their questions without
+contacting your support team. They can search for additional information,
+rate the answers that they get, and if needed, escalate a question
+by submitting it to the support organization. You can implement Knowledge
+Advanced in a new instance or in an existing instance using the Knowledge
+Advanced reference implementation files. </p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_EnableKAonCP.dita" xtrc="p:2;16:4">The reference implementation is a set of PHP files that you can
+use to implement knowledge features. The reference implementation
+is located at <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_EnableKAonCP.dita" xtrc="filepath:1;18:25">cp/src/core/framework/views/pages/okcs/</filepath>. </p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_EnableKAonCP.dita" xtrc="p:3;20:4">You must implement the Knowledge Advanced search (OKCSSearch) and
+browse (OKCSBrowse) functionality on different pages. Search and browse
+functions use different data sources. The widgets that implement search,
+browse, and other related functions, such as results pagination, use
+unique source IDs to reference these data sources. If you implement
+both search and browse functions on a single page, a source ID conflict
+may occur.</p>
+</conbody>
+</concept>

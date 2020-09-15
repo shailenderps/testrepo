@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ExtendTheEmailArticleLinkToAnonymou-5EFDB76D" xml:lang="en">
+<title>Extend an Email Article Link to Anonymous Users</title>
+<shortdesc>This feature uses the <parmname>OkcsEmailAnswerLink</parmname
+> widget to display a link to the current answer that users can send
+to any email recipients, whether or not they are logged in.</shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>You can add an email link to the answer view (<filepath>answer_view.php</filepath
+>) page to send an article to an email recipient, whether or not the
+recipient is logged in to Customer Portal. You can add the email link
+using the <parmname>OkcsEmailAnswerLink</parmname> widget.</p>
+<p>To add the email link, follow these steps:</p>
+<ol>
+<li><p>Edit the file: </p><filepath>cp/customer/development/views/pages/answer/answer_view.php</filepath
+></li>
+<li><p>Add the email link code as follows:</p><p>Existing code:</p
+><codeblock>&lt;rn:widget path="okcs/AnswerContent"/>
+&lt;/div></codeblock><p>Add the following lines of code before the
+closing <codeph>&lt;/div></codeph>:</p><codeblock>&lt;div class="rn_DetailTools rn=HideInPrint">
+	&lt;div class="rn_Links">
+		&lt;rn:widget path="okcs/OkcsEmailAnswerLink"/>
+	&lt;/div>
+&lt;/div></codeblock></li>
+<li><p>Save the answer view page.</p></li>
+<li><p>Go to the Customer Portal administration page (<filepath>https://&lt;your_site>/ci/admin</filepath
+>) and promote the changes to stage and production.</p></li>
+</ol>
+</conbody>
+</concept>

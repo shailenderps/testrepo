@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ConfiguringKnowledgeSyndicationWidg-06614A88"
+xml:lang="en-US">
+<title>Add the Widget to a Page</title>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Use the <uicontrol>Copy Script code to your page</uicontrol> section
+of the <wintitle>widget configuration</wintitle> page to copy and
+paste the syndication widget code into your web page.</p>
+<ol>
+<li><p>Open the source code for the web page that you want to add
+the widget to.</p></li>
+<li><p>Click the <uicontrol>Select Text</uicontrol> button to select
+the code that defines your site URL, then press Ctrl+c to copy the
+code.</p><p>Here’s an example of the code that includes your site
+URL:</p><codeblock>&lt;script type="text/javascript" scr="https://&lt;your_site>/euf/rightnow/RightNow.Client.js">&lt;/script></codeblock
+></li>
+<li><p>Paste the code into the source code of your web page just before
+the closing <codeph>&lt;/body></codeph> tag.</p></li>
+<li><p>Click the <uicontrol>Select Text</uicontrol> button to select
+the code that defines the widget and its attributes, then press Ctrl+c
+to copy the code.</p><p>Here’s an example of the JavaScript code that
+includes the widget configuration:</p><codeblock>&lt;script type="text/javascript">
+	RightNow.Client.Controller.addComponent(
+		{
+			div_id: "myDiv",
+			enable_recent: true,
+			presist_contenttype: false,
+			persist_prodcat: false,
+			q: "oracle",
+			instance_id: "okcs_0",
+			module: "OkcsKnowledgeSyndication",
+			type: 10
+		}
+		"https://&lt;your_site>/ci/ws/get"
+	);
+&lt;/script></codeblock></li>
+<li><p>Paste the copied code just below the code you copied in the
+previous step.</p></li>
+<li><p>Click the <uicontrol>Select Text</uicontrol> button to select
+the <codeph>&lt;div></codeph> tag code, then press Ctrl+c to copy
+the code. This code calls the JavaScript code of the widget generated
+in the previous step.</p><p>Here’s an example of the <codeph>&lt;div></codeph
+> tag code:</p><codeblock>&lt;div id="myDiv">&lt;/div></codeblock
+></li>
+<li><p>Place the <codeph>&lt;div></codeph> tag within the <codeph
+>&lt;/body></codeph> tag</p> where you want the widget to appear on
+the web page.</li>
+</ol>
+</conbody>
+</concept>

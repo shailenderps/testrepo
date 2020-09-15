@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="EditTheHomePage-34D3A5D4" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic task) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d) (topic task strictTaskbody-c)" class="- topic/topic task/task " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="task:1;5:51">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="title:1;6:8">Edit the Home Page</title>
+<taskbody class="- topic/body task/taskbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="taskbody:1;7:11">
+<context class="- topic/section task/context " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="context:1;8:10"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="p:1;8:13">Edit the home page to include code from the reference
+implementation home page.</p></context>
+<steps class="- topic/ol task/steps " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="steps:1;10:8">
+<step class="- topic/li task/step " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="step:1;11:7"><cmd class="- topic/ph task/cmd " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="cmd:1;11:12">Edit the file:</cmd>
+<info class="- topic/itemgroup task/info " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="info:1;12:7"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="filepath:1;12:17">cp/customer/development/views/pages/home.php</filepath></info>
+</step>
+<step class="- topic/li task/step " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="step:2;15:7"><cmd class="- topic/ph task/cmd " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="cmd:2;15:12">Replace Knowledge Foundation search with Knowledge Advanced
+search by changing this line:</cmd>
+<info class="- topic/itemgroup task/info " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="info:2;17:7"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="p:2;17:10"><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:1;17:21">&lt;rn:container source_id="KFSearch"&gt;</codeblock>to:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:2;18:16">&lt;rn:container source_id="OKCSSearch"&gt;</codeblock></p></info>
+</step>
+<step class="- topic/li task/step " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="step:3;21:7"><cmd class="- topic/ph task/cmd " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="cmd:3;21:12">Add both the recent searches and the suggested searches
+widgets by replacing this code:</cmd>
+<info class="- topic/itemgroup task/info " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="info:3;23:7"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="p:3;23:10"><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:3;23:21">&lt;rn:widget path="searchsource/SourceSearchButton" search_results_url="/app/results"/&gt;</codeblock>with:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:4;24:18">&lt;rn:widget path="okcs/RecentSearches"/&gt;
+&lt;rn:widget path="okcs/OkcsSuggestions"/&gt;
+&lt;rn:widget path="searchsource/SourceSearchButton" initial_focus="true" search_results_url="/app/results"/&gt;</codeblock></p></info>
+</step>
+<step class="- topic/li task/step " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="step:4;29:7"><cmd class="- topic/ph task/cmd " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="cmd:4;29:12">Add the knowledge product and category selector by changing
+this line:</cmd>
+<info class="- topic/itemgroup task/info " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="info:4;31:7"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="p:4;31:10"><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:5;31:21">&lt;rn:widget path="navigation/VisualProductCategorySelector" numbered_pagination="true"/&gt; </codeblock>to:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:6;32:16">&lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/&gt;</codeblock></p></info>
+</step>
+<step class="- topic/li task/step " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="step:5;35:7"><cmd class="- topic/ph task/cmd " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="cmd:5;35:12">Add both the popular answers and the recent answers widgets
+by adding this code: </cmd>
+<info class="- topic/itemgroup task/info " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="info:5;37:7"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="p:5;37:10"><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:7;37:21">&lt;div class="rn_PopularKB"&gt;
+   &lt;div class="rn_Container"&gt;
+     &lt;rn:widget path="okcs/AnswerList" type="popular" target="_self" view_type="list"/&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="rn_PopularKB rn_RecentKB"&gt;
+   &lt;div class="rn_Container"&gt;
+     &lt;rn:widget path="okcs/AnswerList" type="recent" target="_self" view_type="list"/&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</codeblock>after this code:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:8;46:49">&lt;div class="rn_PageContent rn_Home"&gt;
+   &lt;div class="rn_Container"&gt;
+     &lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/&gt;
+   &lt;/div&gt;</codeblock></p></info>
+</step>
+</steps>
+<example class="- topic/example " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="example:1;52:10"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="p:6;52:13">Here’s an example of the reference implementation home
+page:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Edit_Home_Page.dita" xtrc="codeblock:9;53:21">&lt;rn:meta title="#rn:msg:SHP_TITLE_HDG#" template="okcs_standard.php" clickstream="home"/&gt;
+&lt;div class="rn_Hero"&gt;
+    &lt;div class="rn_HeroInner"&gt;
+        &lt;div class="rn_HeroCopy"&gt;
+            &lt;h1&gt;#rn:msg:WERE_HERE_TO_HELP_LBL#&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="rn_SearchControls"&gt;
+            &lt;h1 class="rn_ScreenReaderOnly"&gt;#rn:msg:SEARCH_CMD#&lt;/h1&gt;
+            &lt;form method="get" action="/app/results"&gt;
+                &lt;rn:container source_id="OKCSSearch"&gt;
+                    &lt;div class="rn_SearchInput"&gt;
+                        &lt;rn:widget path="searchsource/SourceSearchField" initial_focus="true" label_placeholder="#rn:msg:ASK_A_QUESTION_ELLIPSIS_MSG#"/&gt;
+                    &lt;/div&gt;
+                    &lt;rn:widget path="okcs/RecentSearches"/&gt;
+ &lt;rn:widget path="okcs/OkcsSuggestions"/&gt;
+                    &lt;rn:widget path="searchsource/SourceSearchButton" initial_focus="true" search_results_url="/app/results"/&gt;
+                &lt;/rn:container&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="rn_PageContent rn_Home"&gt;
+    &lt;div class="rn_Container"&gt;
+        &lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/&gt;
+    &lt;/div&gt;
+    &lt;div class="rn_PopularKB"&gt;
+        &lt;div class="rn_Container"&gt;
+            &lt;rn:widget path="okcs/AnswerList" type="popular" target="_self" view_type="list"/&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="rn_PopularKB rn_RecentKB"&gt;
+        &lt;div class="rn_Container"&gt;
+            &lt;rn:widget path="okcs/AnswerList" type="recent" target="_self" view_type="list"/&gt;		
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</codeblock></example>
+</taskbody>
+</task>

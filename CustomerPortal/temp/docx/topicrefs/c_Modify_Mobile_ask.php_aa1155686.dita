@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="aa1155686" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="concept:1;5:39">
+
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="title:1;7:8">Add Knowledge Advanced SmartAssistant</title>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="conbody:1;8:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="p:1;9:4">You must add the mobile ask a question (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="filepath:1;9:54">ask.php</filepath>) page to implement the Knowledge Advanced version of SmartAssistant.
+Users can submit a question to a support agent from the ask a question
+page. Users can also see knowledge articles as well as community discussions
+that match the user-entered text before submitting the question.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="p:2;14:4">You implement mobile SmartAssistant by replacing the mobile ask
+a question page in your current instance with the reference implementation
+mobile ask a question page.<ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="ol:1;16:32">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="li:1;17:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="p:3;17:8">Copy the reference implementation mobile ask a question page
+from here:</p> <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="filepath:2;18:26">/cp/core/framework/views/pages/okcs/mobile/ask.ph</filepath></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="li:2;20:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="p:4;20:8">Place it here:</p> <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="filepath:3;20:37">/cp/customer/development/views/pages/mobile/</filepath></li>
+</ol></p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="p:5;23:4">Here’s an example of the reference implementation mobile ask a
+question (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="filepath:4;24:21">ask.php</filepath>) page:</p>
+<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_Mobile_ask.php_aa1155686.dita" xtrc="codeblock:1;25:12">&lt;rn:meta title="#rn:msg:ASK_QUESTION_HDG#" template="okcs_mobile.php" clickstream="incident_create"/&gt;
+&lt;div class="rn_Hero"&gt;
+   &lt;div class="rn_HeroInner"&gt;
+      &lt;div class="rn_HeroCopy"&gt;
+         &lt;h1&gt;#rn:msg:SUBMIT_QUESTION_OUR_SUPPORT_TEAM_CMD#&lt;/h1&gt;
+         &lt;p&gt;#rn:msg:OUR_DEDICATED_RESPOND_WITHIN_48_HOURS_MSG#&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="rn_PageContent rn_AskQuestion rn_Container"&gt;
+   &lt;form id="rn_QuestionSubmit" method="post" action="/ci/ajaxRequest/sendForm"&gt;
+      &lt;div id="rn_ErrorLocation"&gt;/div&gt;
+      &lt;rn:condition logged_in="false"&gt;
+      &lt;rn:widget path="input/FormInput" name="Contact.Emails.PRIMARY.Address" required="true" initial_focus="true" label_input="#rn:msg:EMAIL_ADDR_LBL#"/&gt;
+      &lt;rn:widget path="input/FormInput" name="Incident.Subject" required="true" label_input="#rn:msg:SUBJECT_LBL#"/&gt;
+      &lt;/rn:condition&gt;
+      &lt;rn:condition logged_in="true"&gt;
+      &lt;rn:widget path="input/FormInput" name="Incident.Subject" required="true" initial_focus="true" label_input="#rn:msg:SUBJECT_LBL#"/&gt;
+      &lt;/rn:condition&gt;
+      &lt;rn:widget path="input/FormInput" name="Incident.Threads" required="true" label_input="#rn:msg:QUESTION_LBL#"/&gt;
+      &lt;rn:widget path="input/FileAttachmentUpload"/&gt;
+      &lt;rn:widget path="input/MobileProductCategoryInput" name="Incident.Product"/&gt;
+      &lt;rn:widget path="input/MobileProductCategoryInput" name="Incident.Category"/&gt;
+      &lt;rn:widget path="input/FormSubmit" label_button="#rn:msg:SUBMIT_YOUR_QUESTION_CMD#" on_success_url="/app/ask_confirm" error_location="rn_ErrorLocation"/&gt;
+      &lt;rn:condition content_viewed="2" searches_done="1"&gt;
+      &lt;rn:condition_else/&gt;
+      &lt;rn:widget path="okcs/OkcsSmartAssistant" accesskeys_enabled="false" view_type="inline"/&gt;
+      &lt;/rn:condition&gt;
+   &lt;/form&gt;
+&lt;/div&gt;</codeblock>
+</conbody>
+</concept>

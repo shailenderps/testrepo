@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="EnablingUsersToDisplayCommunityDisc-EC4BEC0E" xml:lang="en">
+<title>Add Community Discussions to SmartAssistant</title>
+<shortdesc>The Knowledge Advanced version of SmartAssistant includes
+community discussions as well as knowledge base answers. When users
+submit a question, Knowledge Advanced search returns answers and social
+search returns discussions that match the search terms that were entered.</shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Knowledge Advanced uses its own version of SmartAssistant. You
+can add community discussions to the Knowledge Advanced SmartAssistant
+so that users can see both community content and knowledge base articles
+in search results. You update SmartAssistant by editing the KFAPI_SSS_ENABLED
+configuration setting. The default value of the configuration setting
+is No.</p>
+<ol>
+<li><p>Go to <uicontrol>Site Configuration</uicontrol>, <uicontrol
+>Configuration Settings</uicontrol>.</p></li>
+<li><p>Set the value of the configuration setting <parmname>KFAPI_SSS_ENABLED</parmname
+> to <codeph>Yes</codeph>.</p></li>
+</ol>
+</conbody>
+</concept>

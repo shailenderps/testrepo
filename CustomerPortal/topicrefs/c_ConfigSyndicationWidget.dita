@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ConfiguringTheOKCSSyndicationWidget-065F1B40"
+xml:lang="en-US">
+<title>Configure Knowledge Widget</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Use the <uicontrol>Configure Widget</uicontrol> section of the <wintitle
+>widget configuration</wintitle> page to configure the knowledge widget.</p>
+<ol>
+<li><p>Go to the your site’s administration page:</p> <filepath>https://&lt;your_site>/ci/admin</filepath
+></li>
+<li><p>Click <uicontrol>Widgets</uicontrol>, then <uicontrol>Syndicated
+Widgets</uicontrol>.</p></li>
+<li><p>Click <uicontrol>OkcsKnowledgeSyndication</uicontrol>.</p></li>
+<li><p>Configure the <codeph>OkcsKnowledgeSyndication</codeph> widget
+attributes using the <uicontrol>Configure Widget</uicontrol> section.</p
+><p>You can see the list of the widget attributes and their descriptions
+on your site’s administration page: <filepath>https://&lt;your_site>/ci/tags/syndicated_widgets/standard/OkcsKnowledgeSyndication</filepath
+>.</p></li>
+<li><p>Click <uicontrol>Apply</uicontrol>.</p></li>
+<li><p>Preview your changes in the <uicontrol>Preview this Configuration</uicontrol
+> section.</p></li>
+</ol>
+</conbody>
+</concept>

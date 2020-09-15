@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Inc?>
+<concept id="AccessingTheKnowledgeAdvancedCustom-300D61B5" xml:lang="en">
+<title>Accessing the Knowledge Advanced Customer Portal Files</title><?Pub
+Caret -2?>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>The Knowledge Advanced Customer Portal files are packaged as an
+archive, <codeph>OKCS-CP.zip</codeph>, which is available in the Service
+Cloud Support Knowledge base as an attachment to Answer 8019: <i>How
+do We Enable Knowledge Advanced on Customer Portal?</i> .</p>
+<draft-comment>(https://cx.rightnow.com/app/answers/detail/a_id/8019)</draft-comment>
+</conbody>
+<related-links>
+<link href="https://cx.rightnow.com/app/answers/detail/a_id/8019"
+scope="external"><linktext>Answer 8019: How do We Enable Knowledge
+Advanced on Customer Portal?</linktext></link>
+</related-links>
+</concept>

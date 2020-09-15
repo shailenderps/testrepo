@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ImplementKnowledgeAdvancedInAnExist-2150FA22" xml:lang="en">
+<title>Implement Knowledge Advanced in an Existing Customer Portal
+Instance</title>
+<shortdesc></shortdesc>
+<conbody>
+<p>You can implement Knowledge Advanced in an existing instance by
+replacing or modifying the standard files in your development folder
+with the Knowledge Advanced reference implementation files.</p>
+<p>You can preserve your customized pages by modifying only the specific
+lines of code required to implement Knowledge Advanced. You can use
+the reference implementation pages as examples on how to modify the
+pages instead of replacing them. You must promote your changes to
+production so that users can begin using them.</p>
+<p>You can find more information about staging and promoting changes into production in <xref
+    href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=FAMUG" format="html"
+    scope="external">Using B2C Service</xref>.</p>
+</conbody>
+</concept>

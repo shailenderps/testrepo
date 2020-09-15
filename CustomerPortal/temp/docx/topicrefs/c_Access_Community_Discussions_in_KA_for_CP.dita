@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="AccessingTheCommunitySelfServiceDis-EBC1432C" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="concept:1;5:74">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="title:1;6:8">About Community Discussions</title>
+<shortdesc class="- topic/shortdesc " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="shortdesc:1;7:12"/>
+<prolog class="- topic/prolog " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="prolog:1;8:9">
+<metadata class="- topic/metadata " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="metadata:1;9:11"><keywords class="- topic/keywords " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="keywords:1;9:21"><indexterm class="- topic/indexterm " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="indexterm:1;9:32"/></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="conbody:1;11:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="p:1;12:4">Community Self Service in Service Cloud provides a platform for
+community and peer-to-peer knowledge sharing. It provides self-service
+users with an additional channel that community members can use to
+ask questions, provide answers, and discuss issues.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="p:2;16:4">You can add community discussions to knowledge in your current
+instance to enable self-service users to get answers from discussions
+along side knowledge base answers. Community discussions are organized
+using the same product hierarchy as knowledge base articles.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="p:3;20:4">You can include community discussions on the home page, the results
+page, and in the Knowledge Advanced version of SmartAssistant. When
+users search for answers on these pages, their answers will include
+both knowledge base articles and community discussions.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="p:4;24:4">You can find more information about Community Self Service in Service
+Cloud User Guide. See <xref href="https://cx.rightnow.com/app/answers/detail/a_id/5168" scope="external" class="- topic/xref " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Access_Community_Discussions_in_KA_for_CP.dita" xtrc="xref:1;27:18"><?ditaot usertext?>Documentation for Oracle Service Cloud Products (Answer
+ID 5168)</xref> to locate the documentation for your specific release,
+then use the Documentation Library or the Online Help User Guide link
+to locate the relevant topics.</p>
+</conbody>
+</concept>

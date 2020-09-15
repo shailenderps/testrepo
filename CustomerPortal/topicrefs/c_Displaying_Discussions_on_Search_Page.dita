@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="DisplayingTheCommunityDiscussionsWi-EBD59B71" xml:lang="en">
+<title>Add Community Discussions to the Results Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Edit the results page so that users can see community discussions
+in addition to the articles in search results.</p>
+<ol>
+<li><p>Edit the file: <filepath>/cp/customer/development/views/pages/results.php</filepath
+></p></li>
+<li><p>Add community discussions by adding this code:</p><codeblock
+>&lt;div class="rn_Container">
+&lt;div class="rn_QuestionResults">
+&lt;rn:container source_id="SocialSearch" per_page="5">
+&lt;rn:widget path="searchsource/SourceResultDetails"/>
+&lt;rn:widget path="searchsource/SocialResultListing" label_heading="#rn:msg:RESULTS_FROM_THE_COMMUNITY_LBL#" more_link_url="/app/social/questions/list"/>
+&lt;/rn:container>
+&lt;/div>
+&lt;/div></codeblock></li>
+</ol>
+</conbody>
+</concept>

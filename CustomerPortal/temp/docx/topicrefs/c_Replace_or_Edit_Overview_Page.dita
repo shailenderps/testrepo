@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="ReplaceOrEditTheOverviewPage-36652124" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="concept:1;5:67">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="title:1;6:8">Replace or Edit the Account Overview Page</title>
+<shortdesc class="- topic/shortdesc " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="shortdesc:1;7:12"/>
+<prolog class="- topic/prolog " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="prolog:1;8:9">
+<metadata class="- topic/metadata " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="metadata:1;9:11"><keywords class="- topic/keywords " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="keywords:1;9:21"><indexterm class="- topic/indexterm " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="indexterm:1;9:32"/></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="conbody:1;11:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="p:1;12:4">You can replace or edit the account overview (overview.php) page
+so that users can view their support questions and content recommendations.
+Your users can also update their account settings, change their password,
+manage answer notifications, and manage content type notifications
+using the account overview page.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="p:2;17:4">You can implement Knowledge Advanced notifications on the account
+overview page using either of the following methods:<ul class="- topic/ul " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="ul:1;18:57">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="li:1;19:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="p:3;19:8">Replace the overview page in your current instance with the
+reference implementation overview page.</p></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="li:2;21:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Edit_Overview_Page.dita" xtrc="p:4;21:8">Edit the overview page in your current instance to include
+code from the reference implementation overview page.</p></li>
+</ul></p>
+</conbody>
+</concept>

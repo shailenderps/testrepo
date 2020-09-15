@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="DisplayingAllAnswersForAllProductsA-B8482384" xml:lang="en">
+<title>Enable Users to Display Answers for All Content Types</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>You can edit the browse page to add the All option so that users
+can see articles for all content types. Users can see articles for
+all the content types or filter articles by a content type. You add
+the All option by including the display all label attribute in the
+content type widget.</p>
+<ol>
+<li><p>Edit the file:</p> <filepath>/cp/customer/development/views/pages/browse.php</filepath
+></li>
+<li><p>Add the All option by changing this line:</p><codeblock>&lt;rn:widget path="okcs/ContentType"/></codeblock
+><p>to:</p><codeblock>&lt;rn:widget path="okcs/ContentType" display_all_content="true" display_all_label="&lt;new_label_name>" /></codeblock
+></li>
+</ol>
+</conbody>
+</concept>

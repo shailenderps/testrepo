@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Inc?>
+<concept id="ContentIMAPICodeExample-102D410D" xml:lang="en">
+<title>Content (IM) API Code Example</title>
+<conbody>
+<p>This sample code snippet shows a GET request that retrieves a document
+by its document Id. The request returns the knowledge base article
+with the specified document Id.</p><?Pub Caret 89?>
+<p>Example of Request Body:<codeblock>$okcsModel = new \RightNow\Models\Okcs();
+$url = \RightNow\Utils\Config::getConfig(OKCS_IM_API_URL) . 'latest/content/docId/{docId}';
+$methodName = 'GET';
+$apiResponse = $okcsModel->makeApiRequest($url, $methodName);
+var_dump($apiResponse);
+</codeblock></p>
+</conbody>
+</concept>

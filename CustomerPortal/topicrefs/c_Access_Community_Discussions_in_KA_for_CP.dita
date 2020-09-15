@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="AccessingTheCommunitySelfServiceDis-EBC1432C" xml:lang="en">
+<title>Community Discussions</title>
+<conbody>
+<p>Community Self Service in B2C Service provides a platform for
+community and peer-to-peer knowledge sharing. It provides self-service
+users with an additional channel that community members can use to
+ask questions, provide answers, and discuss issues.</p>
+<p>You can add community discussions to knowledge in your current
+instance to enable self-service users to get answers from discussions
+along side knowledge base answers. Community discussions are organized
+using the same product hierarchy as knowledge base articles.</p>
+<p>You can include community discussions on the home page, the results
+page, and in the Knowledge Advanced version of SmartAssistant. When
+users search for answers on these pages, their answers will include
+both knowledge base articles and community discussions.</p>
+<p>You can find more information about Community Self Service in <xref
+    href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=FAMUG" format="html"
+    scope="external">Using B2C Service</xref>.</p>
+</conbody>
+</concept>

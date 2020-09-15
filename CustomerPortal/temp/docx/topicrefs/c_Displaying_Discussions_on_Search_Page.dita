@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="DisplayingTheCommunityDiscussionsWi-EBD59B71" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="concept:1;5:74">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="title:1;6:8">Add Community Discussions to the Results Page</title>
+<shortdesc class="- topic/shortdesc " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="shortdesc:1;7:12"/>
+<prolog class="- topic/prolog " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="prolog:1;8:9">
+<metadata class="- topic/metadata " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="metadata:1;9:11"><keywords class="- topic/keywords " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="keywords:1;9:21"><indexterm class="- topic/indexterm " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="indexterm:1;9:32"/></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="conbody:1;11:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="p:1;12:4">Edit the results page so that users can see community discussions
+in addition to the articles in search results.</p>
+<ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="ol:1;14:5">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="li:1;15:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="p:2;15:8">Edit the file: <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="filepath:1;15:33">/cp/customer/development/views/pages/results.php</filepath></p></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="li:2;17:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="p:3;17:8">Add community discussions by adding this code:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Displaying_Discussions_on_Search_Page.dita" xtrc="codeblock:1;18:2">&lt;div class="rn_Container"&gt;
+&lt;div class="rn_QuestionResults"&gt;
+&lt;rn:container source_id="SocialSearch" per_page="5"&gt;
+&lt;rn:widget path="searchsource/SourceResultDetails"/&gt;
+&lt;rn:widget path="searchsource/SocialResultListing" label_heading="#rn:msg:RESULTS_FROM_THE_COMMUNITY_LBL#" more_link_url="/app/social/questions/list"/&gt;
+&lt;/rn:container&gt;
+&lt;/div&gt;
+&lt;/div&gt;</codeblock></li>
+</ol>
+</conbody>
+</concept>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="ModifyNotificationsList-D77D9430" xml:lang="en-US" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="concept:1;5:65">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="title:1;6:8">Enable Users to Manage Answer Notifications</title>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="conbody:1;7:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:1;8:4">You must edit the notifications (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="filepath:1;8:47">list.php</filepath>)
+page so that users can manage their notifications. Users can see notifications
+they have subscribed to and delete a subscription from the notifications
+page.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:2;12:4">You can edit the notifications page in your current instance to
+include code from the reference implementation notifications page.</p>
+<ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="ol:1;14:5">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="li:1;15:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:3;15:8">Edit the file:</p> <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="filepath:2;15:37">/cp/customer/development/views/pages/account/notif/list.php</filepath></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="li:2;17:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:4;17:8">Add the loading indicator by adding this code:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="codeblock:1;18:2">&lt;div id="rn_LoadingIndicator" class="rn_Browse"&gt;
+   &lt;rn:widget path="okcs/LoadingIndicator"/&gt;
+&lt;/div&gt;</codeblock><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:5;20:25">before this code:</p><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="codeph:1;20:54">&lt;div class=”rn_PageContent”&gt;</codeph></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="li:3;22:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:6;22:8">Add the answer notification manager widget by adding this code:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="codeblock:2;23:13">&lt;rn:widget path="okcs/OkcsAnswerNotificationManager" view_type="list"/&gt;</codeblock><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:7;24:5">within this section:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="codeblock:3;24:40">&lt;div class=”rn_PageContent”&gt;</codeblock></li>
+</ol>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="p:8;27:4">Here’s an example of the reference implementation notifications
+(<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="filepath:3;28:12">list.php</filepath>) page:</p>
+<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Modify_list.dita" xtrc="codeblock:4;29:12">&lt;rn:meta title="#rn:msg:NOTIFICATIONS_HDG#" template="okcs_standard.php" login_required="true" force_https="true"/&gt;
+&lt;div class="rn_Hero"&gt;
+    &lt;div class="rn_Container"&gt;
+        &lt;h1&gt;#rn:msg:NOTIFICATIONS_HDG#&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="rn_LoadingIndicator" class="rn_Browse"&gt;
+    &lt;rn:widget path="okcs/LoadingIndicator"/&gt;
+&lt;/div&gt;
+&lt;div class="rn_PageContent rn_AccountNotifications rn_Container"&gt;
+    &lt;h2&gt;#rn:msg:ANS_NOTIFICATIONS_LBL#&lt;/h2&gt;
+    &lt;rn:widget path="okcs/OkcsAnswerNotificationManager" view_type="list"/&gt; 
+&lt;/div&gt;</codeblock>
+</conbody>
+</concept>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ImplementingKnowledgeAdvancedOnTheC-2152B41A" xml:lang="en">
+<title>Implementing Knowledge Advanced on Mobile Customer Portal</title>
+<shortdesc></shortdesc>
+<conbody>
+<p>You enable Knowledge Advanced in an existing Customer Portal mobile
+implementation by replacing or modifying the existing Customer Portal
+mobile pages. You can replace the entire set of Customer Portal files
+with the Knowledge Advanced mobile reference implementation. However,
+the new Knowledge Advanced mobile files will overwrite any customized
+files in your current implementation. You can preserve your customized
+files by using the Knowledge Advanced mobile files as examples on
+how to modify the files instead of replacing them.</p>
+</conbody>
+</concept>

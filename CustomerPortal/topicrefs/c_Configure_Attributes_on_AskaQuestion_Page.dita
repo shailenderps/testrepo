@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ConfigureArticleAttributesOnTheAskA-30B9A21A" xml:lang="en">
+<title>Configure Article Attributes on the Ask a Question Page</title>
+<shortdesc></shortdesc>
+<conbody>
+<p>You can configure article attributes on the Ask a Question page
+using the custom metadata attribute.</p>
+<ol>
+<li><p>Edit the file: </p><filepath>cp/customer/development/views/pages/ask.php</filepath
+></li>
+<li><p>Add the <parmname>custom_metadata</parmname> parameter code
+as follows:<codeblock>&lt;rn:widget path="okcs/OkcsSmartAssistant" custom_metadata="attribute | attribute | attribute"/></codeblock
+></p></li>
+<li><p>Specify the attributes that you want to display as a list of
+items separated by the pipe character (<codeph>|</codeph>), for example:<codeblock
+>&lt;rn:widget path="Okcs/SmartAssistant" custom_metadata="document_id | version | status | display_date"/></codeblock
+></p></li>
+</ol>
+</conbody>
+</concept>

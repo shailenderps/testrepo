@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="AddOrEditTheAnswerDetailPage-36DF4562" xml:lang="en">
+<title>Add the Knowledge Advanced Answer Detail Page</title>
+<conbody>
+<p>You must implement the answer detail (<filepath>answer_view.php</filepath
+>) page to open articles with the article details page. Users can
+see the article content and its details, including document ID, Version,
+Status, and Published Date using the article details page.</p>
+<p>You can implement the answer detail page using either of the following
+methods:<ul>
+<li><p>Add the reference implementation answer detail page to your
+current instance.</p></li>
+<li><p>Edit the answer detail page in your current instance to include
+code from the reference implementation answer detail page.</p></li>
+</ul></p>
+</conbody>
+</concept>

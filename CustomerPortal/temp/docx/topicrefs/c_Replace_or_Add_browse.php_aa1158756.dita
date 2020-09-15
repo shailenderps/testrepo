@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="aa1158756" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="concept:1;5:39">
+
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="title:1;7:8">Add Knowledge Advanced Browse</title>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="conbody:1;8:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="p:1;9:4">You must implement the Knowledge Advanced browse page so that users
+can browse articles and filter the articles by content type, product,
+and category. You implement the browse page by adding the browse page
+from the reference implementation to your existing instance.</p>
+<ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="ol:1;13:5">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="li:1;14:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="p:2;14:8">Copy the browse page from here:</p><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="filepath:1;14:53">/cp/core/framework/views/pages/okcs/browse.php</filepath></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="li:2;16:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="p:3;16:8">Place it here:</p><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="filepath:2;16:36">/cp/customer/development/views/pages/</filepath></li>
+</ol>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="p:4;19:4">Here’s an example of the reference implementation browse page:</p>
+<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_browse.php_aa1158756.dita" xtrc="codeblock:1;20:12">&lt;rn:meta title="#rn:msg:FIND_ANS_HDG#" template="okcs_standard.php" clickstream="answer_list"/&gt;
+&lt;rn:condition config_check="OKCS_ENABLED == true"&gt;
+    &lt;div class="rn_Container"&gt;
+        &lt;div id="rn_PageTitle" class="rn_ScreenReaderOnly"&gt;
+            &lt;h1&gt;#rn:msg:BROWSE1_AB_HDG#&lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;rn:container source_id="OKCSBrowse"&gt;
+            &lt;div id="rn_PageContentChannel" class="rn_Browse rn_PageContentChannel"&gt;
+                &lt;div class="rn_PageContentChannelInner"&gt;
+                    &lt;rn:widget path="okcs/ContentType"/&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div id="rn_LoadingIndicator" class="rn_Browse"&gt;
+               &lt;rn:widget path="okcs/LoadingIndicator"/&gt;
+           &lt; /div&gt;
+
+            &lt;div id="rn_PageContentArticles" class="rn_AnswerList"&gt;
+                &lt;rn:widget path="okcs/OkcsRecommendContent"/&gt;
+                &lt;div class="rn_ResultPadding"&gt;
+                    &lt;div&gt;
+                        &lt;div id="rn_OkcsLeftContainer" class="rn_OkcsLeftContainer"&gt;
+                            &lt;rn:widget path="okcs/OkcsProductCategorySearchFilter" filter_type="products" view_type="explorer"/&gt;
+                            &lt;rn:widget path="okcs/OkcsProductCategorySearchFilter" filter_type="categories" view_type="explorer"/&gt;
+                        &lt;/div&gt;
+                        &lt;div id="rn_OkcsRightContainer" class="rn_OkcsRightContainer"&gt;
+                            &lt;div id="rn_Browse_Loading"&gt;/div&gt;
+                            &lt;div id="rn_OkcsAnswerList"&gt;
+                                &lt;rn:widget path="okcs/AnswerList" target="_self"/&gt;
+                                &lt;div class="rn_FloatRight"&gt;
+                                    &lt;rn:widget path="okcs/OkcsPagination"/&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/rn:container&gt;
+    &lt;/div&gt;
+&lt;/rn:condition&gt;</codeblock>
+</conbody>
+</concept>

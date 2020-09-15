@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="AddTheRelatedAnswersWidget-EC590A56" xml:lang="en">
+<title>Add Related Answers to the Social Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Users can see the discussions about a selected community question
+on the social detail page. You can add related knowledge base answers
+so that they will also see relevant articles in addition to community
+discussions. You add them by including the related answers widget
+in the social detail page.</p>
+<p>Users can see up to ten related articles by default. You can set
+the limit number of articles to ten or fewer using the widget's limit
+attribute.</p>
+<ol>
+<li><p>Edit the file: <filepath>cp/customer/development/views/pages/social/questions/detail.php</filepath
+></p></li>
+<li><p>Add this line:</p><codeblock>&lt;rn:widget path="okcs/RelatedKnowledgeAdvanceAnswers" limit="5"/></codeblock
+><p>to this section:</p><codeblock>&lt;div class="rn_SideRail"></codeblock
+></li>
+</ol>
+</conbody>
+</concept>

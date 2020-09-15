@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="ConfiguringSuggestedSearch-B101EB10" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic task) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d) (topic task strictTaskbody-c)" class="- topic/topic task/task " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="task:1;5:62">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="title:1;6:8">Implement Suggested Searches</title>
+<prolog class="- topic/prolog " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="prolog:1;7:9">
+<metadata class="- topic/metadata " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="metadata:1;8:11"><keywords class="- topic/keywords " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="keywords:1;8:21"><indexterm class="- topic/indexterm " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="indexterm:1;8:32"/></keywords></metadata>
+</prolog>
+<taskbody class="- topic/body task/taskbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="taskbody:1;10:11">
+<context class="- topic/section task/context " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="context:1;11:10"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:1;11:13">You can edit the home page so that users can use suggested
+searches. Users can see a list of articles that match the search term
+or phrase as they type in the search field. Suggestions with exact
+keywords match in article titles appear at the top of the results,
+then suggestions that have partial match. You implement suggested
+searches to provide a faster way for your users to locate and select
+relevant articles.</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:2;17:26">The current implementation contains suggested
+searches by default on both the home page and the results page. If
+you are using a previous implementation, you can implement suggested
+searches using the suggestions widget.</p><?Pub Caret 108?><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:3;20:63">Before
+you implement suggested searches, you must enable attribute level
+searching for the master identifier (title field) of each content
+type in the knowledge base. You can find more information about enabling
+attribute level searching in the About Schema Attribute Options section
+in the <xref href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=FAAKA" scope="external" class="- topic/xref " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="xref:1;27:18"><?ditaot usertext?>Knowledge Advanced Administration Guide</xref> .</p><ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="ol:1;28:6">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="li:1;29:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:4;29:8">Edit a Customer Portal page, for example: </p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:5;29:57"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="filepath:1;30:2">/cp/customer/development/views/pages/home.php</filepath></p></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="li:2;31:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:6;31:8">Add the suggested search widget code as follows:</p> <p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:7;31:64"><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="codeblock:1;32:2">&lt;rn:widget path="okcs/OkcsSuggestions"/&gt;</codeblock></p></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="li:3;33:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:8;33:8">Add the suggestion count attribute to specify the number of
+suggested searches you want to display. The default is 7. The maximum
+value is 100.</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="codeblock:2;35:29">&lt;rn:widget path="okcs/OkcsSuggestions" suggestion_count="15"/&gt;</codeblock></li>
+</ol><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:9;37:9">Here’s an example of how to include suggested search widget
+in the home page:</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:10;38:25"><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="codeblock:3;38:36">&lt;rn:meta title="#rn:msg:SHP_TITLE_H&lt;&gt;DG#" template="okcs_standard.php" clickstream="home"/&gt;
+&lt;div class="rn_Hero"&gt;
+	&lt;div class="rn_HeroInner"&gt;
+		&lt;div class="rn_HeroCopy"&gt;
+			&lt;h1&gt;#rn:msg:WERE_HERE_TO_HELP_LBL#&lt;/h1&gt;
+		&lt;/div&gt;
+	&lt;div class="rn_SearchControls"&gt;
+		&lt;h1 class="rn_ScreenReaderOnly"&gt;#rn:msg:SEARCH_CMD#&lt;/h1&gt;
+		&lt;form method="get" action="/app/results"&gt;
+			&lt;rn:container source_id="OKCSSearch"&gt;
+				&lt;div class="rn_SearchInput"&gt;
+					&lt;rn:widget path="searchsource/SourceSearchField" initial_focus="true" label_placeholder="#rn:msg:ASK_A_QUESTION_ELLIPSIS_MSG#"/&gt;
+				&lt;/div&gt;
+				&lt;rn:widget path="okcs/RecentSearches"&gt;
+				&lt;rn:widget path="okcs/OkcsSuggestions"&gt;
+				&lt;rn:widget path="searchsource/SourceSearchButton" initial_focus="true" search_results_url="/app/results"/&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="rn_PageContent rn_Home"&gt;
+	&lt;div class="rn_Container"&gt;
+		&lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/&gt;
+	&lt;/div&gt;
+	&lt;div class="rn_PopularKB"&gt;
+		&lt;div class="rn_Container"&gt;
+			&lt;rn:widget path="okcs/AnswerList" type="popular" target="_self" view_type="list"/&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="rn_PopularKB rn_RecentKB"&gt;
+		&lt;div class="rn_Container"&gt;
+			&lt;rn:widget path="okcs/AnswerList" type="recent" target="_self" view_type="list"/&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</codeblock></p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="p:11;72:29">For more information on the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="codeph:1;72:65">OkcsSuggestions</codeph> widget, see the Standard Widgets section in Oracle Service Cloud
+Online Help User Guide. See <xref href="https://cx.rightnow.com/app/answers/detail/a_id/5168" scope="external" class="- topic/xref " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Configuring_Suggested_Search_in_CP.dita" xtrc="xref:2;76:18"><?ditaot usertext?>Documentation for Oracle Service Cloud Products (Answer
+ID 5168)</xref> to locate documentation for your specific release,
+then use the Documentation Library or the Online Help User Guide link
+to locate the relevant topics.</p></context>
+</taskbody>
+</task>

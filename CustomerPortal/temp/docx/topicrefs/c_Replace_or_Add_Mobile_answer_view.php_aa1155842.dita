@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="aa1155842" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="concept:1;5:39">
+
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="title:1;7:8">Add the Mobile Knowledge Advanced Answer Detail Page</title>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="conbody:1;8:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="p:1;9:4">You must implement the mobile answer detail (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="filepath:1;9:59">answer_view.php</filepath>) page to enable users to open articles with the article details
+page. Users can see the article content and its details, including
+document ID, Version, Status, and Published Date using the article
+details page.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="p:2;14:4">You implement the mobile answer detail page by adding <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="filepath:2;15:2">answer_view.php</filepath> from reference implementation to your
+existing instance.<ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="ol:1;16:23">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="li:1;17:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="p:3;17:8">Copy the reference implementation mobile answer detail from
+here:</p><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="filepath:3;18:20">/cp/core/framework/views/pages/okcs/mobile/answers/answer_view.php</filepath></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="li:2;20:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="p:4;20:8">Place it here:</p> <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="filepath:4;20:37">/cp/customer/development/views/pages/mobile/answers/</filepath></li>
+</ol></p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="p:5;23:4">The following is an example of the reference implementation mobile
+answer detail (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="filepath:5;24:26">answer_view.php</filepath>) page:</p>
+<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/c_Replace_or_Add_Mobile_answer_view.php_aa1155842.dita" xtrc="codeblock:1;25:12">&lt;div class="rn_Container"&gt;
+    &lt;rn:condition config_check="OKCS_ENABLED == true"&gt;
+        &lt;rn:widget path="okcs/OkcsProductCategoryBreadcrumb" display_first_item="false"/&gt;
+        &lt;rn:meta title="#rn:php:\RightNow\Libraries\SEO::getDynamicTitle('answer', \RightNow\Utils\Url::getParameter('a_id'))#" template="okcs_mobile.php"  clickstream="answer_view"/&gt;
+        &lt;rn:widget path="okcs/OkcsRecommendContent"/&gt;
+        &lt;rn:widget path="okcs/SubscriptionButton"/&gt;
+        &lt;section id="rn_PageContent" class="rn_AnswerDetail"&gt;
+            &lt;div id="rn_AnswerText"&gt;
+                &lt;rn:widget path="okcs/AnswerTitle"&gt;
+                &lt;rn:widget path="okcs/AnswerStatus"&gt;
+                &lt;div class="rn_SectionTitle"&gt;&lt;/div&gt;
+                &lt;rn:widget path="okcs/AnswerContent"&gt;
+            &lt;/div&gt;
+            &lt;div class="rn_DetailTools rn_HideInPrint"&gt;
+                &lt;div class="rn_Links"&gt;
+                    &lt;rn:widget path="okcs/OkcsEmailAnswerLink" /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;rn:widget path="okcs/DocumentRating"/&gt;
+            &lt;rn:widget path="okcs/OkcsRelatedAnswers"/&gt;
+        &lt;/section&gt;
+    &lt;/rn:condition&gt;
+&lt;/div&gt;</codeblock>
+</conbody>
+</concept>

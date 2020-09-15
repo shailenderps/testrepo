@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="AddingOracleKnowledgeToYourCompanys-053A3958"
+xml:lang="en-US">
+<title>Add Knowledge to Website Pages</title>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>You can use the knowledge syndication widget to add knowledge to
+pages on your organization’s website in addition to the customer portal.
+This enables users to search for and use knowledge from the most relevant
+places on your web page. You can set up the knowledge widget to display
+articles by content type, product, and category, popular and recent
+articles, and external articles.</p>
+<p>You add the knowledge widget by configuring the widget, then pasting
+the JavaScript code that the widget generates into your organization’s
+web page.</p>
+</conbody>
+</concept>

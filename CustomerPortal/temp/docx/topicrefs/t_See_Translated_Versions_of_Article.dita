@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="SeeATranslatedVersionOfAnArticle-6CEE1C0B" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic task) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d) (topic task strictTaskbody-c)" class="- topic/topic task/task " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="task:1;5:68">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="title:1;6:8">See a Translated Version of an Article</title>
+<taskbody class="- topic/body task/taskbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="taskbody:1;7:11">
+<context class="- topic/section task/context " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="context:1;8:10"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:1;8:13">You can implement the language drop-down so that users
+can see translated versions of an article from the article detail
+page. You implement the language drop-down by adding the translated
+answer selector widget to the article detail page.</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:2;11:58">Users select
+a locale from the language drop-down to see the article and its content
+in the selected locale. The language drop-down displays locales for
+only the published articles. In addition, a user can see translated
+versions of an article based on the usergroup access at the article
+level.</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:3;16:14"><ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="ol:1;16:18">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="li:1;17:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:4;17:8">Edit the file:</p> <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="filepath:1;17:37">cp/customer/development/views/pages/answer/answer_view.php</filepath></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="li:2;19:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:5;19:8">Add the language drop-down by adding this line:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="codeblock:1;20:2">&lt;rn:widget path="okcs/OkcsTranslatedAnswerSelector"/&gt;</codeblock><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:6;21:5">within this section:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="codeblock:2;21:40">&lt;div class="rn_OkcsAnswerAction"&gt;
+	&lt;rn:widget path="okcs/SubscriptionButton"/&gt;
+	&lt;rn:widget path="okcs/OkcsRecommendContent"/&gt;
+&lt;/div&gt;</codeblock></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="li:3;25:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:7;25:8">Specify the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="parmname:1;25:30">label</parmname> attribute to change
+label for the drop-down as follows:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="codeblock:3;26:51">&lt;rn:widget path="okcs/OkcsTranslatedAnswerSelector" label_drop_down="&lt;label_name&gt;"/&gt;</codeblock></li>
+</ol></p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="p:8;28:13">Here’s an example on how to include the language drop-down
+in the answer detail (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="filepath:2;29:33">answer_view.php</filepath>) page:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_See_Translated_Versions_of_Article.dita" xtrc="codeblock:4;30:13">&lt;div class="rn_Container"&gt;
+	&lt;rn:condition config_check="OKCS_ENABLED == true"&gt;
+		&lt;div class="rn_ContentDetail"&gt;
+			&lt;rn:meta title="#rn:php:\RightNow\Libraries\SEO::getDynamicTitle('answer', 
+			\RightNow\Utils\	Url::getParameter('a_id'))#" template="okcs_standard.php"  
+			clickstream="answer_view"/&gt;
+			&lt;div class="rn_PageTitle rn_RecordDetail"&gt;
+				&lt;rn:widget path="okcs/OkcsProductCategoryBreadcrumb" display_first_item="true"/&gt;
+				&lt;div class="rn_OkcsAnswerAction"&gt;
+					&lt;rn:widget path="okcs/SubscriptionButton"/&gt;
+					&lt;rn:widget path="okcs/OkcsRecommendContent"/&gt;
+					&lt;rn:widget path="okcs/OkcsTranslatedAnswerSelector"/&gt;
+				&lt;/div&gt;
+				&lt;rn:widget path="okcs/AnswerTitle"&gt;
+			&lt;/div&gt;
+			&lt;div class="rn_AnswerView"&gt;
+				&lt;rn:widget path="okcs/AnswerStatus"&gt;
+				&lt;div class="rn_SectionTitle"&gt;&lt;/div&gt;
+				&lt;rn:widget path="okcs/AnswerContent"&gt;
+			&lt;/div&gt;
+			&lt;div class="rn_DetailTools rn_HideInPrint"&gt;
+				&lt;div class="rn_Links"&gt;
+					&lt;rn:widget path="okcs/OkcsEmailAnswerLink"/&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;rn:widget path="okcs/DocumentRating"/&gt;
+			&lt;rn:widget path="okcs/OkcsRelatedAnswers"/&gt;
+		&lt;/div&gt;
+		&lt;aside class="rn_SideRail" role="complementary"&gt;
+			&lt;rn:widget path="okcs/OkcsRecentlyViewedContent"/&gt;
+		&lt;/aside&gt;
+	&lt;/rn:condition&gt;
+&lt;/div&gt;</codeblock></context>
+</taskbody>
+</task>

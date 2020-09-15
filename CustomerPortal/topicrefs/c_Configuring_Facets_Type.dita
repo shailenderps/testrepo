@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="EnablingUsersToConfigureTheFacetsTy-EF95D4C9" xml:lang="en">
+<title>Configure Search Results Facets</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>You can configure the display of facets on the search results page.
+You can use the top facet list attribute in the facet widget to:<ul>
+<li><p>reorder facets</p></li>
+<li><p>hide facets</p></li>
+<li><p>rename facets</p></li>
+</ul></p>
+<p>The following list shows the default order in which the facets
+display on the results page.<ul>
+<li><p>Document Types</p></li>
+<li><p>Collections</p></li>
+<li><p>Categories</p></li>
+<li><p>Products</p></li>
+</ul> </p>
+<p>The following table describes four values with an example each
+on how to reorder, hide, or rename the facets using the top facet
+list attribute. You must separate the facets by the pipe (<codeph
+>|</codeph>) character and use the comma (<codeph>,</codeph>) character
+for the facet label description.</p>
+<table>
+<title>Attribute Values for Configuring Facets</title>
+<desc><p>This three column table describes four values that you can
+use to configure facets on the search results page.</p></desc>
+<tgroup cols="3"><colspec colname="col1" colwidth="0.66*"/><colspec
+colname="col2" colwidth="1.10*"/><colspec colname="col3"
+colwidth="1.24*"/>
+<thead>
+<row>
+<entry>Configuration</entry>
+<entry>To display on the results page</entry>
+<entry>Attribute Value</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><p>Default</p></entry>
+<entry><p>Document Types, Collections, Categories, Products</p></entry>
+<entry><p><codeph>&lt;rn:widget path=”okcs/Facet” top_facet_list=”DOC_TYPES,
+Document Types|COLLECTIONS, Collections|CMS-CATEGORY-REF, Categories/CMS-PRODUCT,
+Products”/></codeph></p></entry>
+</row>
+<row>
+<entry><p>Reorder</p></entry>
+<entry><p>Categories, Products, Collections, Document Types</p></entry>
+<entry><p><codeph>&lt;rn:widget path=”okcs/Facet” top_facet_list=”CMS-CATEGORY-REF|CMS-PRODUCT|COLLECTIONS|DOC_TYPES”/></codeph
+></p></entry>
+</row>
+<row>
+<entry><p>Hide</p></entry>
+<entry><p>Document Types, Collections, Categories</p></entry>
+<entry><p><codeph>&lt;rn:widget path=”okcs/Facet” top_facet_list=”DOC_TYPES|COLLECTIONS|CMS-CATEGORY_REF”/></codeph
+></p></entry>
+</row>
+<row>
+<entry><p>Rename</p></entry>
+<entry><p>MyCategory, MyDocuments, MyProduct, MyCollections</p></entry>
+<entry><p><codeph>&lt;rn:widget path=”okcs/Facet” top_facet_list=”CMS-CATEGORY-REF,
+MyCategory|DOC_TYPES, MyDocuments|CMS-PRODUCT, MyProducts|COLLECTIONS,
+MyCollections”/></codeph></p></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>

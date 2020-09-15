@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Inc?>
+<concept id="CustomerPortalCustomizationGuidelin-102A6063" xml:lang="en">
+<title>Customer Portal Customization Guidelines</title>
+<conbody>
+<p>Web developers who need to produce custom code to invoke Knowledge
+Advanced REST APIs from Customer Portal can use the OKCS API model.
+To use the model, you should have an understanding of web application
+development, PHP, software design and development methodologies, object-oriented
+programming, and also a basic understanding of WebDAV, HTML, CSS,
+and JavaScript.</p><?Pub Caret -1?>
+</conbody>
+</concept>

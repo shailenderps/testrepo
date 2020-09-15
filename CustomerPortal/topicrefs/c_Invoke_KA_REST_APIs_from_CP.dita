@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Inc?>
+<concept id="InvokeTheKnowledgeAdvancedRESTAPIsF-102B2CA1" xml:lang="en">
+<title>Invoke the Knowledge Advanced REST APIs from Customer Portal</title>
+<conbody>
+<p>You can invoke both the Knowledge Advanced content (IM) and search
+REST APIs directly from Customer Portal using the OKCS API model.
+The OKCS API model is located in <filepath>/cp/core/framework/Models</filepath
+>.</p>
+<p>The OKCS API model includes a public <codeph>makeApiRequest</codeph
+> method. You can write custom code to instantiate the model class,
+then call the <codeph>makeApiRequest</codeph> method to invoke a content
+(IM) or a search API. The response is stored in the <codeph>$apiResponse</codeph
+> variable, which can be consumed as required. You can include the
+custom code within a custom PHP page or a custom widget.</p><?Pub Caret 334?>
+<p>The <codeph>makeApiRequest</codeph> method has three parameters.<ul>
+<li><p><codeph>$url</codeph> − The API end-point URL of a REST API.
+Use <codeph>\RightNow\Utils\Config::getConfig(OKCS_IM_API_URL) . '&lt;resource_URL>'</codeph
+> to invoke a content (IM) API and <codeph>\RightNow\Utils\Config::getConfig(OKCS_SRCH_API_URL)
+. '&lt;resource_URL>'</codeph> to invoke a search API.</p></li>
+<li><p><codeph>$methodName</codeph> − Method name is the type of method
+request, including GET or POST.</p></li>
+<li><p><codeph>$postData</codeph> − Post data is an array of variable
+names and values in the body of the request message sent by the POST
+method.</p></li>
+</ul></p>
+<p>You can find the complete list of Knowledge Advanced content (IM) and search resource URLs in the
+                <cite>Tasks</cite> section of the <xref
+                href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=CXSKA" format="html"
+                scope="external">REST API for Knowledge Advanced in B2C Service</xref> guide.</p>
+</conbody>
+</concept>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="AddingOracleKnowledgeToYourCompanys-053A3958" xml:lang="en-US" ditaarch:DITAArchVersion="1.3" domains="(topic concept) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" class="- topic/topic concept/concept " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="concept:1;6:18">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="title:1;7:8">Add Knowledge to Website Pages</title>
+<prolog class="- topic/prolog " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="prolog:1;8:9">
+<metadata class="- topic/metadata " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="metadata:1;9:11"><keywords class="- topic/keywords " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="keywords:1;9:21"><indexterm class="- topic/indexterm " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="indexterm:1;9:32"/></keywords></metadata>
+</prolog>
+<conbody class="- topic/body  concept/conbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="conbody:1;11:10">
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="p:1;12:4">You can use the knowledge syndication widget to add knowledge to
+pages on your organization’s website in addition to the customer portal.
+This enables users to search for and use knowledge from the most relevant
+places on your web page. You can set up the knowledge widget to display
+articles by content type, product, and category, popular and recent
+articles, and external articles.</p>
+<p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/AddOKtoWebSite.dita" xtrc="p:2;18:4">You add the knowledge widget by configuring the widget, then pasting
+the JavaScript code that the widget generates into your organization’s
+web page.</p>
+</conbody>
+</concept>

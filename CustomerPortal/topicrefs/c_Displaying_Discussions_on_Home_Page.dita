@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="DisplayingTheCSSDiscussionsWidgetOn-EBD3BF57" xml:lang="en">
+<title>Add Community Discussions to the Home Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Edit the home page so that users can to see community discussions
+in addition to most popular answers and most recent answers.</p>
+<ol>
+<li><p>Edit the file: <filepath>/cp/customer/development/views/pages/home.php</filepath
+></p></li>
+<li><p>Add community discussions by adding this code:</p><codeblock
+>&lt;div class="rn_PopularSocial">
+&lt;div class="rn_Container">
+&lt;h2>#rn:msg:RECENT_COMMUNITY_DISCUSSIONS_LBL#&lt;/h2>
+&lt;rn:widget path="discussion/RecentlyAnsweredQuestions" show_excerpt="true" maximum_questions="5"/>
+&lt;span class="rn_DiscussionLink">
+&lt;a href="/app/social/questions/list/kw/*#rn:session#">#rn:msg:SHOW_MORE_COMMUNITY_DISCUSSIONS_LBL#&lt;/a>
+&lt;/span>
+&lt;/div>
+&lt;/div></codeblock></li>
+</ol>
+</conbody>
+</concept>

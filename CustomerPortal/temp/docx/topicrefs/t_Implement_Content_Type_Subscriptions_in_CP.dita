@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /D:\repositories_localcopy\OKCS\Trunk\CustomerPortal\temp\docx\topicrefs?><?workdir-uri file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/temp/docx/topicrefs/?><?path2project ..\?><?path2project-uri ../?><?path2rootmap-uri ../?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="ImplementingSubscriptionsInCustomer-F1EDBECD" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic task) (topic abbrev-d) a(props deliveryTarget) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic svg-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d) (topic task strictTaskbody-c)" class="- topic/topic task/task " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="task:1;5:71">
+<title class="- topic/title " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="title:1;6:8">Implement Content Type Subscriptions</title>
+<shortdesc class="- topic/shortdesc " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="shortdesc:1;7:12"/>
+<taskbody class="- topic/body task/taskbody " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="taskbody:1;8:11">
+<context class="- topic/section task/context " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="context:1;9:10"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:1;9:13">Article subscription by content type is implemented by
+default on the account overview page. If you are using a previous
+implementation, you can implement content type subscription to enable
+users to subscribe to articles by content type. When users subscribe
+to a content type, they get an email every time there is a new or
+updated article of that type.</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:2;14:37">Users can limit their subscription
+to articles about specific products and categories in the content
+types that they subscribe to.</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:3;16:37">You implement content type subscription
+by adding a reference to the content type subscription page.</p><ol class="- topic/ol " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="ol:1;17:69">
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="li:1;18:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:4;18:8">Copy the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="codeph:1;18:25">content_type_list.php</codeph> file from <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="filepath:1;19:2">/cp/core/framework/views/pages/okcs/account/notif</filepath> to <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="filepath:2;20:2">/cp/customer/development/views/pages/account/notif</filepath>.</p></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="li:2;22:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:5;22:8">Edit a Customer Portal page, for example, the account overview
+page:</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:6;23:13"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="filepath:3;23:23">/cp/customer/development/views/pages/account/overview.php</filepath></p></li>
+<li class="- topic/li " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="li:3;25:5"><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:7;25:8">Add the code snippet to refer to the content type subscription
+page, as follows:</p><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:8;26:25"><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="codeblock:1;26:36">&lt;a href="/app/account/notif/content_type_list#rn:session#"&gt;#rn:astr:Manage your content type answer notifications#&lt;/a&gt;</codeblock></p></li>
+</ol><p class="- topic/p " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="p:9;28:9">Here’s an example on how to include a reference to the content
+type subscription page in the account overview page:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/D:/repositories_localcopy/OKCS/Trunk/CustomerPortal/topicrefs/t_Implement_Content_Type_Subscriptions_in_CP.dita" xtrc="codeblock:2;30:2">&lt;rn:meta title="#rn:msg:ACCOUNT_OVERVIEW_LBL#" template="okcs_standard.php" login_required="true" force_https="true"/&gt;
+
+&lt;div class="rn_Hero"&gt;
+    &lt;div class="rn_Container"&gt;
+        &lt;h1&gt;#rn:msg:ACCOUNT_OVERVIEW_LBL#&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="rn_PageContent rn_AccountOverview rn_Container"&gt;
+    &lt;div class="rn_ContentDetail"&gt;
+        &lt;div class="rn_Questions"&gt;
+            &lt;rn:container report_id="196" per_page="4"&gt;
+                &lt;div class="rn_HeaderContainer"&gt;
+                    &lt;h2&gt;&lt;a class="rn_Questions" href="/app/account/questions/list#rn:session#"&gt;#rn:msg:MY_SUPPORT_QUESTIONS_LBL#/&lt;a&gt;&lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;rn:widget path="reports/Grid" label_caption="&lt;span class='rn_ScreenReaderOnly'&gt;#rn:msg:YOUR_RECENTLY_SUBMITTED_QUESTIONS_LBL#&lt;/span&gt;"/&gt;
+                &lt;a href="/app/account/questions/list#rn:session#"&gt;#rn:msg:SEE_ALL_MY_SUPPORT_QUESTIONS_LBL#&lt;/a&gt;
+            &lt;/rn:container&gt;
+        &lt;/div&gt;
+    
+    &lt;div id="rn_LoadingIndicator" class="rn_Browse"&gt;
+        &lt;rn:widget path="okcs/LoadingIndicator"/&gt;
+    &lt;/div&gt;
+    &lt;rn:container source_id="OKCSBrowse"&gt;
+        &lt;div class="rn_HeaderContainer"&gt;
+            &lt;h2&gt;&lt;a class="rn_Profile" href="/app/account/recommendations/list#rn:session#"&gt;#rn:msg:MY_RECOMMENDATIONS_LBL#&lt;/a&gt;&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;div id="rn_OkcsManageRecommendations"&gt;
+           &lt; rn:widget path="okcs/OkcsManageRecommendations"/&gt;
+            &lt;a href="/app/account/recommendations/list#rn:session#"&gt;#rn:msg:SEE_ALL_RECOMMENDATIONS_LBL#&lt;/&lt;a&gt;
+        &lt;/div&gt;        
+    &lt;/rn:container&gt;    
+&lt;/div&gt;
+
+&lt;div class="rn_SideRail"&gt;
+    &lt;div class="rn_Well"&gt;
+        &lt;h3&gt;#rn:msg:LINKS_LBL#&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="/app/account/profile#rn:session#"&gt;#rn:msg:UPDATE_YOUR_ACCOUNT_SETTINGS_CMD#&lt;/a&gt;&lt;/li&gt;
+            &lt;rn:condition external_login_used="false"&gt;
+                &lt;rn:condition config_check="EU_CUST_PASSWD_ENABLED == true"&gt;
+                    &lt;li&gt;&lt;a href="/app/account/change_password#rn:session#"&gt;#rn:msg:CHANGE_YOUR_PASSWORD_CMD#&lt;/a&gt;&lt;/li&gt;
+                &lt;/rn:condition&gt;
+            &lt;/rn:condition&gt;
+            &lt;li&gt;&lt;a href="/app/account/notif/content_type_list#rn:session#"&gt;#rn:astr:Manage your content type answer notifications#&lt;/a&gt;&lt;/li&gt;
+            &lt;rn:condition is_active_social_user="true"&gt;
+                    &lt;li&gt;&lt;a href="/app/public_profile/user/#rn:profile:socialUserID#"&gt;#rn:msg:VIEW_YOUR_PUBLIC_PROFILE_LBL#&lt;/a&gt;&lt;/li&gt;
+            &lt;/rn:condition&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</codeblock></context>
+</taskbody>
+</task>
