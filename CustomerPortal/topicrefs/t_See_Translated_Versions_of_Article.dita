@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="SeeATranslatedVersionOfAnArticle-6CEE1C0B" xml:lang="en">
+<title>Enable Users to View a Translated Version of an Article</title>
+<taskbody>
+<context><p>You can implement the language drop-down so that users
+can see translated versions of an article from the article detail
+page. You implement the language drop-down by adding the translated
+answer selector widget to the article detail page.</p><p>Users select
+a locale from the language drop-down to see the article and its content
+in the selected locale. The language drop-down displays locales for
+only the published articles. In addition, a user can see translated
+versions of an article based on the usergroup access at the article
+level.</p><p><ol>
+<li><p>Edit the file:</p> <filepath>cp/customer/development/views/pages/answer/answer_view.php</filepath
+></li>
+<li><p>Add the language drop-down by adding this line:</p><codeblock
+>&lt;rn:widget path="okcs/OkcsTranslatedAnswerSelector"/></codeblock
+><p>within this section:</p><codeblock>&lt;div class="rn_OkcsAnswerAction">
+	&lt;rn:widget path="okcs/SubscriptionButton"/>
+	&lt;rn:widget path="okcs/OkcsRecommendContent"/>
+&lt;/div></codeblock></li>
+<li><p>Specify the <parmname>label</parmname> attribute to change
+label for the drop-down as follows:</p><codeblock>&lt;rn:widget path="okcs/OkcsTranslatedAnswerSelector" label_drop_down="&lt;label_name>"/></codeblock
+></li>
+</ol></p><p>Here’s an example on how to include the language drop-down
+in the answer detail (<filepath>answer_view.php</filepath>) page:</p
+><codeblock>&lt;div class="rn_Container">
+	&lt;rn:condition config_check="OKCS_ENABLED == true">
+		&lt;div class="rn_ContentDetail">
+			&lt;rn:meta title="#rn:php:\RightNow\Libraries\SEO::getDynamicTitle('answer', 
+			\RightNow\Utils\	Url::getParameter('a_id'))#" template="okcs_standard.php"  
+			clickstream="answer_view"/>
+			&lt;div class="rn_PageTitle rn_RecordDetail">
+				&lt;rn:widget path="okcs/OkcsProductCategoryBreadcrumb" display_first_item="true"/>
+				&lt;div class="rn_OkcsAnswerAction">
+					&lt;rn:widget path="okcs/SubscriptionButton"/>
+					&lt;rn:widget path="okcs/OkcsRecommendContent"/>
+					&lt;rn:widget path="okcs/OkcsTranslatedAnswerSelector"/>
+				&lt;/div>
+				&lt;rn:widget path="okcs/AnswerTitle">
+			&lt;/div>
+			&lt;div class="rn_AnswerView">
+				&lt;rn:widget path="okcs/AnswerStatus">
+				&lt;div class="rn_SectionTitle">&lt;/div>
+				&lt;rn:widget path="okcs/AnswerContent">
+			&lt;/div>
+			&lt;div class="rn_DetailTools rn_HideInPrint">
+				&lt;div class="rn_Links">
+					&lt;rn:widget path="okcs/OkcsEmailAnswerLink"/>
+				&lt;/div>
+			&lt;/div>
+			&lt;rn:widget path="okcs/DocumentRating"/>
+			&lt;rn:widget path="okcs/OkcsRelatedAnswers"/>
+		&lt;/div>
+		&lt;aside class="rn_SideRail" role="complementary">
+			&lt;rn:widget path="okcs/OkcsRecentlyViewedContent"/>
+		&lt;/aside>
+	&lt;/rn:condition>
+&lt;/div></codeblock></context>
+</taskbody>
+</task>

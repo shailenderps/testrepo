@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Inc?>
+<concept id="AddTheRecommendContentFunctionality-79C0DE23" xml:lang="en">
+<title>Add Related Answers</title>
+<shortdesc>Customers can view a list of answers that are relevant
+to a specific answer that they have accessed. Links to the related
+answers appear beneath the answer displayed on the Answer Detail page
+of an article. By default, the widget displays five answers, but can
+be configured for a maximum of twenty answers. <ph>Set up requires
+selecting the View Related Answers option at the content type level
+(Repository Content Type Properties page) in the Authoring console.
+Selecting this option enables only documents of the same content type. </ph
+><ph>The relationship of a specific answer to related answers is defined
+in Information Manager by adding links to the related answers. The
+links can be added manually or automatically by Analytics as <i>learned
+links</i>. Articles linked manually have priority and are listed above
+learned links. </ph><ph>For more information on content type properties,
+see “Add General Properties” in <i>Service Cloud Knowledge Advanced
+Administration Guide</i>.</ph></shortdesc><?Pub Caret 308?>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>Add the following line of code to include the Related Answer widget
+on <filepath>pages/answers/answer_view.php.</filepath></p>
+<p>Make sure that the View Related Answers option is selected in the
+Feedback tab in Authoring.</p>
+<codeblock>&lt;rn:widget path="okcs/OkcsRelatedAnswers"/></codeblock>
+</conbody>
+<related-links>
+<link format="dita"
+href="Administration/topicrefs/c_Add_General_Properties__af1184821.dita"
+scope="local" type="concept"><linktext></linktext></link>
+</related-links>
+</concept>

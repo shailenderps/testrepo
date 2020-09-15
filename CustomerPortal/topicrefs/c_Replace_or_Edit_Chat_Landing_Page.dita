@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ReplaceOrEditTheChatLandingPage-36E97FEA" xml:lang="en">
+<title>Enable Knowledge Advanced on the Chat Page</title>
+<shortdesc></shortdesc>
+<conbody>
+<p>You must replace or edit the chat landing (<filepath>chat_landing.php</filepath
+>) page to add the Knowledge Advanced chat enhancements to both the
+chat report page and the chat popup window. Users can see their position
+in the support queue, estimated and average wait times, and a search
+field on the chat landing page. The chat window opens when an agent
+is available.</p>
+<p>You must implement the chat enhancements using
+either of the following methods:<ul>
+<li><p>Replace the chat landing page in your current instance with
+the reference implementation chat landing page.</p></li>
+<li><p>Edit the chat landing page in your current instance to include
+code from the reference implementation chat landing page.</p></li>
+</ul></p>
+</conbody>
+</concept>

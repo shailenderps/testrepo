@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Inc?>
+<concept id="SearchAPICodeExample-102D8B56" xml:lang="en">
+<title>Search API Code Example</title>
+<conbody>
+<p>This sample code snippet shows a POST request that creates a question
+in the knowledge base repository. The request returns a set of search
+results for the specified question. </p>
+<p>Example of Request Body: <codeblock>$okcsModel = new \RightNow\Models\Okcs(); 
+$url = \RightNow\Utils\Config::getConfig(OKCS_SRCH_API_URL) . 'latest/search/question?question=search_keyword'; 
+$methodName = 'POST'; 
+$postData = '{resultLocales": "en_us", "session": null, "transactionId": 0}'; 
+$apiResponse = $okcsModel->makeApiRequest($url, $methodName, $postData);
+var_dump($apiResponse);</codeblock><?Pub Caret 330?></p>
+</conbody>
+</concept>

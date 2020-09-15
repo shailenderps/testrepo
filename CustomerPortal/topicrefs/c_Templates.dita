@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ChangesToTemplates-D6ECE5AE" xml:lang="en-US">
+<title>Add the Knowledge Advanced Look and Feel</title>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>You must replace or edit the standard template in your existing
+instance to add the Knowledge Advanced look and feel for page style,
+navigation menu, search results, and the password page. You can implement
+the look and feel using either of the following methods:<ul>
+<li><p>Replace the standard template in your existing instance with
+the reference implementation standard template.</p></li>
+<li><p>Edit the standard template in your existing instance to include
+code from the reference implementation standard template.</p></li>
+</ul></p>
+</conbody>
+</concept>

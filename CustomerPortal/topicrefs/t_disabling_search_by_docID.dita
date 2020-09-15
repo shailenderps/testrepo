@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topic-1-1F97FF0F" xml:lang="en-US">
+<title>Enable Search by Document ID</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<body>
+<p>You can enable users to bypass the search results list and open
+an article directly in the article detail page by entering its document
+ID in the search field. The current implementation contains the search
+by document ID feature by default. If you upgrade from a previous
+implementation, you can add search by document ID by modifying the
+results page.</p>
+<p><ol>
+<li><p>Edit the file:</p><filepath>cp/customer/development/views/pages/results.php</filepath
+></li>
+<li><p>Add the <codeph>document_id_reg_ex</codeph> parameter by changing
+this line:</p><p><codeph>&lt;rn:container source_id="OKCSSearch"/></codeph
+></p><p>to:</p><p><codeph>&lt;rn:container source_id="OKCSSearch"
+document_id_reg_ex="^[\p{L}\p{Nd}_.]*\d{1,10}$"/></codeph></p></li>
+<li><p>Add the <codeph>doc_id_navigation</codeph> parameter to open
+an article directly in the article detail page.</p><p><codeph>&lt;rn:container
+source_id="OKCSSearch" document_id_reg_ex="^\w{1,10}\d{1,10}$" doc_id_navigation="true"/></codeph
+></p><?Pub Caret 104?></li>
+</ol></p>
+</body>
+</topic>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="task_qrx_vgk_kmb" xml:lang="en">
+<title>Enable Users to Use Multiple Facet Selection</title>
+<taskbody>
+ <context><p>You can implement multiple facet selection so that users can refine search results in the filters
+    widget on the results page. Users can refine their search results by selecting multiple products
+    and categories. They can select only one document type and collection.</p>
+  <p>When users select multiple facets, their search results will contain only documents that belong
+    to all of the selections. For example, when user selects product1, product2, category1,
+    category2, document type1, and collection1 from the available facets, the results list displays
+    only documents that belong to all their selection.</p>
+  <p>Selecting a facet automatically applies all of its children in the hierarchy. Selecting a facet
+    does not apply its parent facet. Each selected facet shows as a separate entry in the filters
+    widget, and users can remove facets. Search results update automatically whenever users change a
+    facet selection.</p><?Pub Caret -2?><p>The current implementation does not include the multiple facet selection functionality on the
+    results page by default. You can implement multiple facet selection by adding the enable multi
+    facet attribute to the facet widget.</p>         </context>
+<steps>
+<step><cmd>Edit the file: <filepath>/cp/customer/development/views/pages/results.php</filepath
+></cmd></step>
+<step>
+    <cmd>Add the enable multi facet attribute to the facet widget as follows:<codeph>&lt;rn:widget
+      path="okcs/Facet"enable_multi_select="true"/></codeph></cmd>
+   </step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="task-1-FA8BF076" xml:lang="en">
+<title>Implement Favorites</title>
+<taskbody>
+<context><p>You can implement favorites so that users can bookmark
+frequently-used articles. Favorites provides users with quick and
+easy access to the articles they use most often. Users can access
+their favorites on article detail page and account overview page.</p
+><?Pub Caret 48?><p>Users must log into Customer Portal to use favorites.
+They can add articles to their favorites by clicking Add Favorite
+on the article detail page, and remove articles from their favorites
+by clicking Remove Favorite. They can also view and manage their favorites
+on the account overview page.</p><p>The current implementation includes
+favorites on both the article detail page and the account overview
+page by default. If you upgrade from a previous implementation, you
+can implement favorites by adding the favorites button widget to the
+article detail page, adding the favorites list widget to the account
+overview page, and copying the favorites list reference page into
+your site.</p><p><ol>
+<li><p>Edit the file: <filepath>/cp/customer/development/views/pages/answer/answer_view.php</filepath
+></p></li>
+<li><p>Add the favorite button by adding this line:</p><codeblock
+>rn:widget path="okcs/FavoritesButton"/></codeblock><p>after this
+line:</p><codeblock>rn:widget path="okcs/OkcsRecommendContent"/></codeblock
+></li>
+<li><p>Add the favorites list reference (<filepath>list.php</filepath
+>) page by copying the favorites folder from <filepath>/cp/core/framework/views/pages/okcs/account</filepath
+> to <filepath>/cp/customer/development/views/pages/account</filepath
+></p></li>
+<li><p>Edit the file: <filepath>/cp/customer/development/views/pages/account/overview.php</filepath
+></p></li>
+<li><p>Add the favorites list section by adding the following code:</p
+><codeblock>&lt;div class="rn_HeaderContainer">
+   &lt;h2>&lt;a class="rn_Profile" href="/app/account/favorites/list#rn:session#">#rn:msg:MY_FAVORITES_LBL#&lt;/a>&lt;/h2>
+&lt;/div>
+&lt;div id="rn_OkcsFavoritesList">
+   &lt;rn:widget path="okcs/OkcsFavoritesList" view_type="table" display_fields="title|documentId"/>
+   &lt;a href="/app/account/favorites/list#rn:session#">#rn:astr: See all favorites#&lt;/a>
+&lt;/div></codeblock><p>within this section:</p><codeblock>&lt;rn:container source_id="OKCSBrowse">
+&lt;/rn:container></codeblock></li>
+</ol></p></context>
+<steps>
+<step><cmd></cmd>
+<info></info>
+</step>
+</steps>
+</taskbody>
+</task>

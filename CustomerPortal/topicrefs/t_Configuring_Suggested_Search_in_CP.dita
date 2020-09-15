@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ConfiguringSuggestedSearch-B101EB10" xml:lang="en">
+<title>Implement Suggested Searches</title>
+<taskbody>
+<context><p>You can edit the home page so that users can use suggested
+searches. Users can see a list of articles that match the search term
+or phrase as they type in the search field. Suggestions with exact
+keywords match in article titles appear at the top of the results,
+then suggestions that have partial match. You implement suggested
+searches to provide a faster way for your users to locate and select
+relevant articles.</p><p>The current implementation contains suggested
+searches by default on both the home page and the results page. If
+you are using a previous implementation, you can implement suggested
+searches using the suggestions widget.</p><?Pub Caret 108?><p>Before you implement suggested searches, you must enable attribute level searching for the master
+				identifier (title field) of each content type in the knowledge base. You can find
+				more information about enabling attribute level searching in the About Schema
+				Attribute Options section in <xref
+					href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=FAAKA"
+					scope="external" format="html">Administering Knowledge Advanced</xref> .</p><ol>
+<li><p>Edit a Customer Portal page, for example: </p><p><filepath
+>/cp/customer/development/views/pages/home.php</filepath></p></li>
+<li><p>Add the suggested search widget code as follows:</p> <p><codeblock
+>&lt;rn:widget path="okcs/OkcsSuggestions"/></codeblock></p></li>
+<li><p>Add the suggestion count attribute to specify the number of
+suggested searches you want to display. The default is 7. The maximum
+value is 100.</p><codeblock>&lt;rn:widget path="okcs/OkcsSuggestions" suggestion_count="15"/></codeblock
+></li>
+</ol><p>Here’s an example of how to include suggested search widget
+in the home page:</p><p><codeblock>&lt;rn:meta title="#rn:msg:SHP_TITLE_H&lt;>DG#" template="okcs_standard.php" clickstream="home"/>
+&lt;div class="rn_Hero">
+	&lt;div class="rn_HeroInner">
+		&lt;div class="rn_HeroCopy">
+			&lt;h1>#rn:msg:WERE_HERE_TO_HELP_LBL#&lt;/h1>
+		&lt;/div>
+	&lt;div class="rn_SearchControls">
+		&lt;h1 class="rn_ScreenReaderOnly">#rn:msg:SEARCH_CMD#&lt;/h1>
+		&lt;form method="get" action="/app/results">
+			&lt;rn:container source_id="OKCSSearch">
+				&lt;div class="rn_SearchInput">
+					&lt;rn:widget path="searchsource/SourceSearchField" initial_focus="true" label_placeholder="#rn:msg:ASK_A_QUESTION_ELLIPSIS_MSG#"/>
+				&lt;/div>
+				&lt;rn:widget path="okcs/RecentSearches">
+				&lt;rn:widget path="okcs/OkcsSuggestions">
+				&lt;rn:widget path="searchsource/SourceSearchButton" initial_focus="true" search_results_url="/app/results"/>
+		&lt;/form>
+	&lt;/div>
+	&lt;/div>
+&lt;/div>
+&lt;div class="rn_PageContent rn_Home">
+	&lt;div class="rn_Container">
+		&lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/>
+	&lt;/div>
+	&lt;div class="rn_PopularKB">
+		&lt;div class="rn_Container">
+			&lt;rn:widget path="okcs/AnswerList" type="popular" target="_self" view_type="list"/>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="rn_PopularKB rn_RecentKB">
+		&lt;div class="rn_Container">
+			&lt;rn:widget path="okcs/AnswerList" type="recent" target="_self" view_type="list"/>
+		&lt;/div>
+	&lt;/div>
+&lt;/div></codeblock></p><p>For more information on the <codeph>OkcsSuggestions</codeph> widget, see the Standard Widgets
+				section in <xref
+					href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=FAMUG"
+					format="html" scope="external">Using B2C Service</xref>.</p></context>
+</taskbody>
+</task>

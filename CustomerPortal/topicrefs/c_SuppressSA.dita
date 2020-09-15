@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="concept-1-DCB71FD2" xml:lang="en-US">
+<title>Suppress SmartAssistant Filters</title>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>SmartAssistant uses the user-provided product and category as search
+filters to restrict results by default. You can override the default
+filtering to use only product, category, or neither to filter search
+results.</p>
+<p>SmartAssistant uses the user-provided product and category as search
+filters to restrict results. By default, it uses both product and
+category. When using SmartAssistant to search, you can override the
+default filtering to use only product, category, or neither.</p>
+<p>A hook in the file <codeph>hooks.php</codeph>, which contains hook
+definitions, calls a method defined in <codeph>Sample.php</codeph
+>. To apply a specific choice of filter, or to ignore both filters,
+modify the files <codeph>hooks.php</codeph> and <codeph>Sample.php</codeph
+>.</p>
+<ol>
+<li><p>Edit the file:</p> <filepath>cp/customer/development/config/hooks.php</filepath
+></li>
+<li><p>Add the following code at the end of the file:</p><codeblock
+>$rnHooks['pre_retrieve_smart_assistant_answers'][] = array(  'class' => 'Sample', // Name of the custom model  'function' => 'retrieveSmartAssistantRequest',  'filepath' => ''  );</codeblock
+></li>
+<li><p>Edit the file:</p> <filepath>cp/customer/development/models/custom/Sample.php</filepath
+></li>
+<li><p>Add the following code at the end of the file:</p><codeblock
+>&lt;?php
+namespace Custom\Models;  
+require_once CPCORE . 'Models/Okcs.php';  
+
+class Sample extends \RightNow\Models\Okcs 
+{
+function __construct()  
+{
+parent::__construct(); 
+}
+public function retrieveSmartAssistantRequest(&amp;$hookData) {
+// Second argument determines which SA results to show. Possible values are 'Product', 'Category', 'ProductAndCategory', 'None'.
+parent::retrieveSmartAssistantRequest(&amp;$hookData, 'ProductAndCategory');
+}
+}</codeblock></li>
+</ol>
+</conbody>
+</concept>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="EditTheStandardTemplate-34E3B73C" xml:lang="en">
+<title>Edit the Standard Template</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<context><p>Edit the standard template to include code from the reference
+implementation standard template and rename the modified template
+file.</p></context>
+<steps>
+<step><cmd>Edit the file:</cmd>
+<info><filepath>cp/customer/development/views/templates/standard.php</filepath
+></info>
+</step>
+<step><cmd>Add the style sheet by changing this line:</cmd>
+<info><p><codeblock>&lt;rn:theme path="/euf/assets/themes/standard" css="site.css"/></codeblock
+>to:<codeblock>&lt;rn:theme path="/euf/assets/themes/standard" css="site.css, okcs.css"/></codeblock
+></p></info>
+</step>
+<step><cmd>Add search by changing this line:</cmd>
+<info><codeblock>&lt;rn:widget path="search/SimpleSearch" report_page_url="/app/results"/></codeblock
+>to:<codeblock>&lt;rn:widget path="search/OkcsSimpleSearch" icon_path="" report_page_url="/app/search"/></codeblock
+></info>
+</step>
+<step><cmd>Modify the navigation menu by changing this code:</cmd>
+<info><codeblock>&lt;ul class="rn_NavigationMenu">
+   &lt;li>
+      &lt;rn:widget path="navigation/NavigationTab" label_tab="#rn:msg:SUPPORT_HOME_TAB_HDG#" link="/app/#rn:config:CP_HOME_URL#" pages="home"/>
+   &lt;/li>
+   &lt;li>
+      &lt;rn:widget path="navigation/NavigationTab" label_tab="#rn:msg:ASK_QUESTION_HDG#" link="/app/ask" pages="ask, ask_confirm"/>
+   &lt;/li>
+   &lt;li>
+      &lt;rn:widget path="navigation/NavigationTab" label_tab="#rn:msg:COMMUNITY_HOME_LBL#" link="/app/social/home" pages="social/home"/>
+   &lt;/li>
+&lt;/ul></codeblock>to:<codeblock>&lt;ul class="rn_NavigationMenu">
+   &lt;li>
+      &lt;rn:widget path="navigation/NavigationTab" label_tab="#rn:msg:SUPPORT_HOME_TAB_HDG#" link="/app/#rn:config:CP_HOME_URL#" pages="home"/>
+   &lt;/li>
+   &lt;rn:condition config_check="OKCS_ENABLED == true">
+      &lt;li>
+         &lt;rn:widget path="navigation/NavigationTab" label_tab="#rn:msg:ANSWERS_HDG#" link="/app/browse" pages="browse, answers/list, answers/detail, answers/intent, answers/answer_view, search"/>
+      &lt;/li>
+   &lt;rn:condition_else>
+      &lt;li>
+         &lt;rn:widget path="navigation/NavigationTab" label_tab="#rn:msg:ANSWERS_HDG#" link="/app/search" pages="answers/list, answers/detail, answers/intent, answers/answer_view, search"/>
+      &lt;/li>
+   &lt;/rn:condition>
+   &lt;li>
+      &lt;rn:widget path="navigation/NavigationTab" label_tab="#rn:msg:ASK_QUESTION_HDG#" link="/app/ask" pages="ask, ask_confirm"/>
+   &lt;/li>
+&lt;/ul></codeblock></info>
+</step>
+<step><cmd>Modify the password login by adding this code:</cmd>
+<info><codeblock>sub:login:create_account_fields="Contact.Emails.PRIMARY.Address;Contact.Login;Contact.NewPassword;Contact.FullName"</codeblock
+>after this line:<codeblock>sub:input_Contact.NewPassword:label_input="#rn:msg:PASSWORD_LBL#"</codeblock
+></info>
+</step>
+<step><cmd>Rename the template file to:</cmd>
+<info><filepath>okcs_template.php</filepath></info>
+</step>
+</steps>
+</taskbody>
+</task>

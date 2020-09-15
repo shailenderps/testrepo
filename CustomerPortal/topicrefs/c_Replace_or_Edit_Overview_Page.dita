@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="ReplaceOrEditTheOverviewPage-36652124" xml:lang="en">
+<title>Replace or Edit the Account Overview Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<conbody>
+<p>You can replace or edit the account overview (overview.php) page
+so that users can view their support questions and content recommendations.
+Your users can also update their account settings, change their password,
+manage answer notifications, and manage content type notifications
+using the account overview page.</p>
+<p>You can implement Knowledge Advanced notifications on the account
+overview page using either of the following methods:<ul>
+<li><p>Replace the overview page in your current instance with the
+reference implementation overview page.</p></li>
+<li><p>Edit the overview page in your current instance to include
+code from the reference implementation overview page.</p></li>
+</ul></p>
+</conbody>
+</concept>

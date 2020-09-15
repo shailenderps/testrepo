@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ConfiguringTheArticleAttributes-19A6640E" xml:lang="en">
+<title>Configure the Article Attributes</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<context><p>You can configure the article attributes so that users
+can see the article details along with its content. You configure
+the article attributes that you want to display including the custom
+metadata parameter in the answer view page and the ask a question
+page. By default, your users can see article details, including Document
+ID, Version, Status, and Display Date.</p><table
+id="ArticleAttributes-1EBCDA1B">
+<title>List of Article Attributes</title>
+<desc>This two-column table describes the article attributes that
+you can specify to display on the Answer and Ask a Question pages.</desc>
+<tgroup cols="2"><colspec colname="col1" colwidth="0.69*"/><colspec
+colname="col2" colwidth="1.31*"/>
+<thead>
+<row>
+<entry>Attribute</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><p>document_id</p></entry>
+<entry><p>The article’s document ID.</p></entry>
+</row>
+<row>
+<entry><p>version</p></entry>
+<entry><p>The article’s version.</p></entry>
+</row>
+<row>
+<entry><p>status</p></entry>
+<entry><p>The article’s status. Displays whether the article is published
+or in draft state.</p></entry>
+</row>
+<row>
+<entry><p>display_date</p></entry>
+<entry><p>The publish date of a published article or the last modified
+date of a draft article.</p></entry>
+</row>
+<row>
+<entry><p>creator</p></entry>
+<entry><p>The user who created the article.</p></entry>
+</row>
+<row>
+<entry><p>aggregate_rating</p></entry>
+<entry><p>The aggregate rating of article.</p></entry>
+</row>
+<row>
+<entry><p>owner</p></entry>
+<entry><p>The article’s owner.</p></entry>
+</row>
+<row>
+<entry><p>answer_id</p></entry>
+<entry><p>The article’s answer ID.</p></entry>
+</row>
+<row>
+<entry><p>last_modified</p></entry>
+<entry><p>The date that the article was last modified.</p></entry>
+</row>
+<row>
+<entry><p>last_modifier</p></entry>
+<entry><p>The user who last updated the article.</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></context>
+</taskbody>
+</task>

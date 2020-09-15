@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="DownloadTheReferenceImplementation-85A87B4B" xml:lang="en">
+<title>Download the Reference Implementation</title>
+<taskbody>
+<context><p>Download the folder that contains the Knowledge Advanced reference implementation
+    pages.</p><ol>
+    <li>
+     <p>Connect your Customer Portal site through WebDav.</p>
+    </li>
+    <li><p>Download the <filepath>okcs</filepath> folder from
+      here:</p><filepath>/cp/core/framework/views/pages/</filepath></li>
+    <?Pub Caret 44?>
+   </ol><object data="https://www.youtube.com/embed/t7bVDJTOlIU?rel=0&amp;autoplay=0" height="480"
+    outputclass="iframe" type="iframe" width="640">
+    <param name="allowfullscreen" value="true"/>
+    <param name="desc" value="The content of this video is also covered in text topics."/>
+   </object></context>
+</taskbody>
+<related-links>
+<link
+href="https://www.youtube.com/embed/t7bVDJTOlIU?rel=0&amp;autoplay=1"
+scope="external" format="html"><linktext>Video: Connecting WebDav to Configure Customer
+Portal for Knowledge Advanced</linktext></link>
+</related-links>
+</task>

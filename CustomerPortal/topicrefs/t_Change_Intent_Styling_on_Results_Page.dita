@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="ChangeTheStyleOfIntentAnswersOnTheR-C820DED3" xml:lang="en">
+<title>Change the Style of Intent Answers on the Results Page</title>
+<taskbody>
+<context><p>You can apply a visual style to answers that are associated
+to intents. Using a distinct visual style for intent answers helps
+users identify them as featured answers. Intents are dictionary objects
+that represent a class of similar questions and answers. Intents provide
+a way for knowledge managers to feature a single best answer to a
+set of questions that may vary in wording or detail.</p><p>The current
+implementation contains a default stylesheet to distinguish intent
+answers from other search results. If you upgrade from a previous
+implementation to the current implementation, the upgrade process
+automatically installs the intent style sheet in the default location, <filepath
+>/cp/customer/assets/themes/standard/intent.css</filepath>. To use
+the default intent style, you must update the search result widget
+to the latest version, which includes the intent style, as shown in
+this example:<codeblock>&lt;rn:widget path="okcs/SearchResult" apply_style_on_intents="true"/></codeblock
+><?Pub Caret -2?></p><p>You can change the default style by editing
+the attributes in the intent style sheet.</p></context>
+<steps>
+<step><cmd>Edit the file:</cmd>
+<info><filepath>/cp/customer/assets/themes/standard/intent.css</filepath
+></info>
+</step>
+<step><cmd>Edit the default style attributes to match your desired
+style.</cmd></step>
+</steps>
+<example><p>Here’s an example of an intent style sheet that uses the
+default style:</p><codeblock>.rn_IntentResult {
+    padding: 0.75em;
+    color: #000;
+    border-radius: 0.3em;
+    border: 0.5em solid #40526b;
+}
+.rn_IntentResult .rn_ResultIcon:before {
+    display: none;
+}
+.rn_SearchResult .rn_SearchResultContent .rn_IntentResult a {
+    font-weight: bold;
+}
+.rn_IntentResult.rn_ResultElement .rn_Element1 {
+    padding-left: unset;
+}
+</codeblock></example>
+</taskbody>
+</task>

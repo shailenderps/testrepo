@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="RecommendingContentForAnswers-794769EF" xml:lang="en">
+<title>Recommending Content for Answers</title>
+<shortdesc>You can recommend new answers and changes to the content
+of existing answers in the Knowledge Base. The Knowledge Management
+administrator who is responsible for the answer must accept or reject
+the recommendation in the Authoring console.</shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<context><note>To activate this feature, an administrator must select
+the <uicontrol>Enable Content Recommendations </uicontrol>option in
+the <uicontrol>Authoring</uicontrol> > <uicontrol>Content</uicontrol
+> tab.</note><p>Use the following procedure to add or modify content
+recommendations.</p><?Pub Caret -1?></context>
+<steps>
+<step><cmd>In the menu bar, click <uicontrol>Answers</uicontrol>,
+and then click the<uicontrol> Recommend Content</uicontrol> button.</cmd>
+<stepresult>The Recommendation pane opens.</stepresult>
+</step>
+<step><cmd>In the text fields, enter a title and a description of
+the information you want to add or change.</cmd></step>
+<step><cmd>Click the <uicontrol>Submit</uicontrol> button.</cmd></step>
+<step><cmd>Optionally, you can check the status of your recommendation
+in your <uicontrol>Account Overview</uicontrol> under <uicontrol>My
+Recommendations</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ConfiguringAProductOrCategoryOnTheH-4C1CD147" xml:lang="en">
+<title>Configure a Product or Category Landing Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<context><p>You can configure the support home page as a product landing
+page or as a category landing page. Product and category landing pages
+restrict search and search results to a selected product or category,
+enabling users to easily find specific information. All searches from
+the page will automatically use the selected product or category,
+and answers displayed will be specific to the selected product or
+category. Users can also navigate to product and categories of interest
+using breadcrumbs and images.</p><p>You configure the home page using
+the knowledge visual product category selector widget to display either
+a product landing page or category landing page. The home page is
+configured as a product landing page by default.</p><p>You can add
+images to display for each product and category. To add product and
+category images, you must upload an image for each product or category
+to the following directory:</p><filepath>cp/customer/assets/images/prodcat-images</filepath
+><p>Images must have the same name as their corresponding product
+or category. If an image corresponding to a product or category is
+not found, default image (<filepath>default.png</filepath>) from the
+images directory is displayed on the home page.</p><p>Modify the home
+page in your existing instance to configure the product or category
+landing page.</p><ol>
+<li><p>Edit the file:</p><filepath>cp/customer/development/views/pages/home.php</filepath
+></li>
+<li><p>Locate the OkcsVisualProductCategorySelector widget code, for
+example:</p><codeblock>&lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" type="product"/></codeblock
+></li>
+<li><p>Edit the <codeph>type</codeph> attribute to the desired configuration,
+either product or categories, for example:</p><codeblock>&lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" type="categories"/></codeblock
+></li>
+<li><p>Add the <codeph>maximum_items</codeph> attribute to specify
+the number of products or categories you want to display. The default
+value is 8. The maximum value is 40.</p><codeblock>&lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" maximum_items="12"/></codeblock
+></li>
+</ol></context>
+</taskbody>
+</task>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="EditTheAnswerDetailPage-36DFDE60" xml:lang="en">
+<title>Edit the Answer Detail Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<context><p>Edit the answer detail page in your current instance to
+include code from the reference implementation answer detail (<filepath
+>answer_view.php</filepath>) page and rename the modified file.</p
+><p>Ensure that the answer detail page does not contain the answer
+details (<codeph>answer_details</codeph>) attribute in the meta code <codeph
+>&lt;rn:meta...></codeph>. The presence of this attribute will cause
+the articles to display incorrectly.</p></context>
+<steps>
+<step><cmd>Edit the file:</cmd>
+<info><filepath>/cp/customer/development/views/pages/answers/detail.php</filepath
+></info>
+</step>
+<step><cmd>Replace the entire code with this code:</cmd>
+<info><codeblock>&lt;div class="rn_Container">
+    &lt;rn:condition config_check="OKCS_ENABLED == true">
+        &lt;div class="rn_ContentDetail">
+            &lt;rn:meta title="#rn:php:\RightNow\Libraries\SEO::getDynamicTitle('answer', \RightNow\Utils\Url::getParameter('a_id'))#" template="okcs_standard.php"  clickstream="answer_view"/>
+            &lt;div class="rn_PageTitle rn_RecordDetail">
+               &lt;rn:widget path="okcs/OkcsProductCategoryBreadcrumb" display_first_item="true"/>
+                &lt;div class="rn_OkcsAnswerAction">
+                   &lt;rn:widget path="okcs/SubscriptionButton"/>
+                   &lt;rn:widget path="okcs/OkcsRecommendContent"/>
+                /div>
+                &lt;rn:widget path="okcs/AnswerTitle">
+            &lt;/div>
+            &lt;div class="rn_AnswerView">
+                &lt;rn:widget path="okcs/AnswerStatus">
+                &lt;div class="rn_SectionTitle">&lt;/div>
+                &lt;rn:widget path="okcs/AnswerContent">
+            &lt;/div>
+            &lt;div class="rn_DetailTools rn_HideInPrint">
+                &lt;div class="rn_Links">
+                    &lt;rn:widget path="okcs/OkcsEmailAnswerLink" />
+                &lt;/div>
+            &lt;/div>
+            &lt;rn:widget path="okcs/DocumentRating"/>
+            &lt;rn:widget path="okcs/OkcsRelatedAnswers"/>
+        &lt;/div>
+        &lt;aside class="rn_SideRail" role="complementary">
+            &lt;rn:widget path="okcs/OkcsRecentlyViewedContent"/>
+        &lt;/aside>
+    &lt;/rn:condition>
+&lt;/div></codeblock></info>
+</step>
+<step><cmd>Rename the file:</cmd>
+<info><filepath>answer_view.php</filepath></info>
+</step>
+</steps>
+</taskbody>
+</task>

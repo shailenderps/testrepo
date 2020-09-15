@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ReplaceTheStandardTemplate-34E3A4EE" xml:lang="en">
+<title>Replace the Standard Template</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<context><p>Replace the standard template with the reference implementation
+standard template.</p></context>
+<steps>
+<step><cmd>Copy the implementation standard template from here:</cmd>
+<info><filepath>/cp/core/framework/views/templates/okcs/okcs_standard.php</filepath
+></info>
+</step>
+<step><cmd>Place it here:</cmd>
+<info><filepath>/cp/customer/development/views/templates/</filepath
+></info>
+</step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ConfigureTheNumberOfResultsPerPage-6E022338" xml:lang="en">
+<title>Enable Users to Set the Number of Results Per Page</title>
+<taskbody>
+<context><p>You can configure the results per page drop-down so that
+users can change the number of display results that appear on each
+page by adding the results per page attribute to the results page.
+Specify the options for the number of results as a comma-separated
+list. The default options are 10, 20, 30, and 50. The results page
+uses the first number in the list as the default. You can remove the
+options from the results page by leaving the results per page attribute
+empty. Search will show ten results on each page by default.</p><p
+>You can follow these steps to configure the results per page drop-down
+on the results page.</p><ol>
+<li><p>Edit the file:</p><filepath>cp/customer/development/views/pages/results.php</filepath
+></li>
+<li><p>Add the <parmname>results_per_page</parmname> attribute code
+as follows:</p><codeblock>&lt;rn:container source_id="OKCSSearch" document_id_reg_ex="^[\p{L}\p{Nd}_.]*\d{1,10}$" doc_id_navigation="true" results_per_page="2,6,12,18,20,25,30"></codeblock
+></li>
+</ol></context>
+</taskbody>
+</task>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ReplaceTheCustomerPortalStandardPag-85A8D406" xml:lang="en">
+<title>Replace the Customer Portal Standard Pages</title>
+<taskbody>
+<context><p>Replace the standard pages in your current instance with
+the reference implementation pages.</p><ol>
+<li><p>Copy the reference implementation pages from the <filepath
+>okcs</filepath> folder.</p></li>
+<li><p>Place them here:</p> <filepath>/cp/customer/development/views/pages/</filepath
+></li>
+</ol></context>
+</taskbody>
+</task>

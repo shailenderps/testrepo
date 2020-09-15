@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="AddRecommendedContentToAnswers-7F595D27" xml:lang="en">
+<title>Enable Content Recommendation</title><?Pub Caret -1?>
+<conbody>
+<p>This function allows users to recommend new content or changes
+to an existing content in Knowledge Base. The recommendation appears
+under Tasks &amp; Recommendations in the Repository Content Type Properties
+page in Authoring. The administrator can accept or reject the recommendation.
+Users can see the status of their recommendations in Account Overview
+> My Recommendations.</p>
+<p>Before you implement content recommendation, you must enable the content recommendation option
+   for the content type in the knowledge base. You can find more information about enabling content
+   recommendation in the <i>Add Content Type General Properties</i> in <xref
+    href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=FAAKA" scope="external"
+    format="html">Administering Knowledge Advanced</xref>.</p>
+<p>The following code adds the Recommend Content button and text fields
+to the<filepath> pages/answer/answer_view.php</filepath> and <filepath
+>pages/browse.php</filepath> pages.</p>
+<codeblock>&lt;rn:widget path="okcs/OkcsRecommendContent"/></codeblock>
+</conbody>
+</concept>

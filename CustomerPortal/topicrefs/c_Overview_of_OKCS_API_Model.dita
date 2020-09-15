@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2015, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Inc?>
+<concept id="OverviewOfOKCSAPIModel-102B02D6" xml:lang="en">
+<title>OKCS API Model</title>
+<conbody>
+<p>The OKCS API model (<filepath>okcs.php</filepath>) provides functionality
+to perform Knowledge Advanced operations. It has various wrapper functions
+for the Knowledge Advanced REST API's and business logic to model
+the data for Customer Portal pages and widgets interaction. All Knowledge
+Advanced widgets and pages use the Knowledge Advanced REST APIs to
+fetch or post data.</p><?Pub Caret 243?>
+</conbody>
+</concept>

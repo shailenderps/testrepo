@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ReplaceTheOverviewPage-36648801" xml:lang="en">
+<title>Replace the Account Overview Page</title>
+<shortdesc></shortdesc>
+<prolog>
+<metadata><keywords><indexterm></indexterm></keywords></metadata>
+</prolog>
+<taskbody>
+<context><p>Replace the account overview page with the reference implementation
+overview page.</p></context>
+<steps>
+<step><cmd>Copy the reference implementation overview page from here:</cmd>
+<info><filepath>/cp/core/framework/views/pages/okcs/account/overview.php</filepath
+></info>
+</step>
+<step><cmd>Place it here:</cmd>
+<info><filepath>/cp/customer/development/views/pages/account/</filepath
+></info>
+</step>
+</steps>
+</taskbody>
+</task>

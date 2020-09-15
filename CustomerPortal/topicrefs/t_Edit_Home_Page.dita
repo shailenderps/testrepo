@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="EditTheHomePage-34D3A5D4" xml:lang="en">
+<title>Edit the Home Page</title>
+<taskbody>
+<context><p>Edit the home page to include code from the reference
+implementation home page.</p></context>
+<steps>
+<step><cmd>Edit the file:</cmd>
+<info><filepath>cp/customer/development/views/pages/home.php</filepath
+></info>
+</step>
+<step><cmd>Replace Knowledge Foundation search with Knowledge Advanced
+search by changing this line:</cmd>
+<info><p><codeblock>&lt;rn:container source_id="KFSearch"></codeblock
+>to:<codeblock>&lt;rn:container source_id="OKCSSearch"></codeblock
+></p></info>
+</step>
+<step><cmd>Add both the recent searches and the suggested searches
+widgets by replacing this code:</cmd>
+<info><p><codeblock>&lt;rn:widget path="searchsource/SourceSearchButton" search_results_url="/app/results"/></codeblock
+>with:<codeblock>&lt;rn:widget path="okcs/RecentSearches"/>
+&lt;rn:widget path="okcs/OkcsSuggestions"/>
+&lt;rn:widget path="searchsource/SourceSearchButton" initial_focus="true" search_results_url="/app/results"/></codeblock
+></p></info>
+</step>
+<step><cmd>Add the knowledge product and category selector by changing
+this line:</cmd>
+<info><p><codeblock>&lt;rn:widget path="navigation/VisualProductCategorySelector" numbered_pagination="true"/> </codeblock
+>to:<codeblock>&lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/></codeblock
+></p></info>
+</step>
+<step><cmd>Add both the popular answers and the recent answers widgets
+by adding this code: </cmd>
+<info><p><codeblock>&lt;div class="rn_PopularKB">
+   &lt;div class="rn_Container">
+     &lt;rn:widget path="okcs/AnswerList" type="popular" target="_self" view_type="list"/>
+   &lt;/div>
+&lt;/div>
+&lt;div class="rn_PopularKB rn_RecentKB">
+   &lt;div class="rn_Container">
+     &lt;rn:widget path="okcs/AnswerList" type="recent" target="_self" view_type="list"/>
+   &lt;/div>
+&lt;/div></codeblock>after this code:<codeblock>&lt;div class="rn_PageContent rn_Home">
+   &lt;div class="rn_Container">
+     &lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/>
+   &lt;/div></codeblock></p></info>
+</step>
+</steps>
+<example><p>Here’s an example of the reference implementation home
+page:</p><codeblock>&lt;rn:meta title="#rn:msg:SHP_TITLE_HDG#" template="okcs_standard.php" clickstream="home"/>
+&lt;div class="rn_Hero">
+    &lt;div class="rn_HeroInner">
+        &lt;div class="rn_HeroCopy">
+            &lt;h1>#rn:msg:WERE_HERE_TO_HELP_LBL#&lt;/h1>
+        &lt;/div>
+        &lt;div class="rn_SearchControls">
+            &lt;h1 class="rn_ScreenReaderOnly">#rn:msg:SEARCH_CMD#&lt;/h1>
+            &lt;form method="get" action="/app/results">
+                &lt;rn:container source_id="OKCSSearch">
+                    &lt;div class="rn_SearchInput">
+                        &lt;rn:widget path="searchsource/SourceSearchField" initial_focus="true" label_placeholder="#rn:msg:ASK_A_QUESTION_ELLIPSIS_MSG#"/>
+                    &lt;/div>
+                    &lt;rn:widget path="okcs/RecentSearches"/>
+ &lt;rn:widget path="okcs/OkcsSuggestions"/>
+                    &lt;rn:widget path="searchsource/SourceSearchButton" initial_focus="true" search_results_url="/app/results"/>
+                &lt;/rn:container>
+            &lt;/form>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+&lt;div class="rn_PageContent rn_Home">
+    &lt;div class="rn_Container">
+        &lt;rn:widget path="okcs/OkcsVisualProductCategorySelector" numbered_pagination="true"/>
+    &lt;/div>
+    &lt;div class="rn_PopularKB">
+        &lt;div class="rn_Container">
+            &lt;rn:widget path="okcs/AnswerList" type="popular" target="_self" view_type="list"/> 
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="rn_PopularKB rn_RecentKB">
+        &lt;div class="rn_Container">
+            &lt;rn:widget path="okcs/AnswerList" type="recent" target="_self" view_type="list"/>		
+        &lt;/div>
+    &lt;/div>
+&lt;/div></codeblock></example>
+</taskbody>
+</task>

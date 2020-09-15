@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="PromoteChangesToGoLive-85AA991C" xml:lang="en">
+<title>Promote Changes to Go Live</title>
+<taskbody>
+<context><p>Stage your current instance pages to see how your changes
+will appear on the production site. Then, promote the changes to production
+so your users can begin using them.</p><ol>
+<li><p>Go to the Customer Portal administration page (<filepath>https://&lt;your_site>/ci/admin/</filepath
+>), click Development Mode from the dashboard. The Customer Portal
+site opens in the development mode.</p></li>
+<li><p>Preview your development pages to verify your changes in the
+development mode.</p></li>
+<li><p>Promote your changes to stage and production from the Customer
+Portal administration page.</p></li>
+</ol><p>You can find more information about staging and promoting changes into production in <xref
+     href="http://www.oracle.com/pls/topic/lookup?ctx=cloud&amp;id=FAMUG" format="html"
+     scope="external">Using B2C Service</xref>.</p></context>
+</taskbody>
+</task>

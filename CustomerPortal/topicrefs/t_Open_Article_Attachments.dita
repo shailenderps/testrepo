@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="EnableUsersToOpenAnArticleAttachmen-85AFA38A" xml:lang="en">
+<title>Enable Users to Open an Article Attachment</title>
+<taskbody>
+<context><p>Users can open file attachments of an article in a separate
+browse window with the answer page. You implement the answer page
+by adding <filepath>answer.php</filepath> from the reference implementation
+to your current instance.</p><ol>
+<li><p>Copy the <filepath>answer.php</filepath> file from here:</p
+> <filepath>/cp/core/framework/views/admin/okcs/</filepath></li>
+<li><p>Place it here:</p> <filepath>/cp/customer/development/views/admin/</filepath
+></li>
+</ol></context>
+</taskbody>
+</task>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="UpdatingCustomerPortalFiles-3A68B9CF" xml:lang="en">
+<title>Implement Knowledge Advanced in a New Customer Portal Instance</title>
+<shortdesc>You can enable Knowledge Advanced in a new Customer Portal
+instance by replacing the standard Customer Portal files with the
+Knowledge Advanced reference implementation files.</shortdesc>
+<taskbody>
+<context><p>You can enable Knowledge Advanced in a new instance by
+replacing the standard pages in your development folder with the Knowledge
+Advanced reference implementation pages. You can replace the standard
+pages by downloading the reference implementation, copying them into
+your site, configuring the pages, and promoting the new implementation
+to production.</p></context>
+</taskbody>
+</task>

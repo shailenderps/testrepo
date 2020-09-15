@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_rwb_53g_pmb">
+    <title>Enable Users to View the Selected Facets</title>
+    <taskbody>
+        <context>
+            <p>You can implement facet filter widget so that users can view the facets selected on
+                the results page. Each selected facet shows as a separate entry in the facet filter
+                widget, and users can remove a facet by clicking <uicontrol>X</uicontrol> next to
+                it. </p>
+            <p>The current implementation includes facet filter at the top of the results page by default. If you upgrade from a previous implementation, you can implement facet filter by adding the facet filter widget to the results page.</p>            
+        </context>
+        <steps>
+            <step>
+                <cmd>Edit the file: <filepath>/cp/customer/development/views/pages/results.php</filepath></cmd>
+            </step>
+            <step>
+                <cmd>Add the facet widget filter by adding this line: <codeph>&lt;rn:widget
+                        path="okcs/FacetFilter"/></codeph></cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

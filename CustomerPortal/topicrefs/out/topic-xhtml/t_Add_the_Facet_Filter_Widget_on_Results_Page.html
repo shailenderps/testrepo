@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="(C) Copyright 2020" />
+<meta name="DC.rights.owner" content="(C) Copyright 2020" />
+<meta name="DC.type" content="task" />
+<meta name="DC.title" content="Enable Users to View the Selected Facets" />
+<meta name="DC.format" content="XHTML" />
+<meta name="DC.identifier" content="task_rwb_53g_pmb" />
+<link rel="stylesheet" type="text/css" href="commonltr.css" />
+<title>Enable Users to View the Selected Facets</title>
+</head>
+<body id="task_rwb_53g_pmb">
+
+    <h1 class="title topictitle1" id="ariaid-title1">Enable Users to View the Selected Facets</h1>
+
+    <div class="body taskbody">
+        <div class="section context">
+            <p class="p">You can implement facet filter widget so that users can view the facets selected on
+                the results page. Each selected facet shows as a separate entry in the facet filter
+                widget, and users can remove a facet by clicking <span class="ph uicontrol">X</span> next to
+                it. </p>
+
+            <p class="p">The current implementation includes facet filter at the top of the results page by default. If you upgrade from a previous implementation, you can implement facet filter by adding the facet filter widget to the results page.</p>
+            
+        </div>
+
+        <ol class="ol steps"><li class="li step">
+                <span class="ph cmd">Edit the file: <span class="ph filepath">/cp/customer/development/views/pages/results.php</span></span>
+            </li>
+<li class="li step">
+                <span class="ph cmd">Add the facet widget filter by adding this line: <code class="ph codeph">&lt;rn:widget
+                        path="okcs/FacetFilter"/&gt;</code></span>
+            </li>
+</ol>
+
+    </div>
+
+</body>
+</html>

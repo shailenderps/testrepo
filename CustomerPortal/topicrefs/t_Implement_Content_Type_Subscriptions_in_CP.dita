@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2017, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<task id="ImplementingSubscriptionsInCustomer-F1EDBECD" xml:lang="en">
+<title>Implement Content Type Subscriptions</title>
+<shortdesc></shortdesc>
+<taskbody>
+<context><p>Article subscription by content type is implemented by
+default on the account overview page. If you are using a previous
+implementation, you can implement content type subscription to enable
+users to subscribe to articles by content type. When users subscribe
+to a content type, they get an email every time there is a new or
+updated article of that type.</p><p>Users can limit their subscription
+to articles about specific products and categories in the content
+types that they subscribe to.</p><p>You implement content type subscription
+by adding a reference to the content type subscription page.</p><ol>
+<li><p>Copy the <codeph>content_type_list.php</codeph> file from <filepath
+>/cp/core/framework/views/pages/okcs/account/notif</filepath> to <filepath
+>/cp/customer/development/views/pages/account/notif</filepath>.</p
+></li>
+<li><p>Edit a Customer Portal page, for example, the account overview
+page:</p><p><filepath>/cp/customer/development/views/pages/account/overview.php</filepath
+></p></li>
+<li><p>Add the code snippet to refer to the content type subscription
+page, as follows:</p><p><codeblock>&lt;a href="/app/account/notif/content_type_list#rn:session#">#rn:astr:Manage your content type answer notifications#&lt;/a></codeblock
+></p></li>
+</ol><p>Here’s an example on how to include a reference to the content
+type subscription page in the account overview page:</p><codeblock
+>&lt;rn:meta title="#rn:msg:ACCOUNT_OVERVIEW_LBL#" template="okcs_standard.php" login_required="true" force_https="true"/>
+
+&lt;div class="rn_Hero">
+    &lt;div class="rn_Container">
+        &lt;h1>#rn:msg:ACCOUNT_OVERVIEW_LBL#&lt;/h1>
+    &lt;/div>
+&lt;/div>
+
+&lt;div class="rn_PageContent rn_AccountOverview rn_Container">
+    &lt;div class="rn_ContentDetail">
+        &lt;div class="rn_Questions">
+            &lt;rn:container report_id="196" per_page="4">
+                &lt;div class="rn_HeaderContainer">
+                    &lt;h2>&lt;a class="rn_Questions" href="/app/account/questions/list#rn:session#">#rn:msg:MY_SUPPORT_QUESTIONS_LBL#/&lt;a>&lt;/h2>
+                &lt;/div>
+                &lt;rn:widget path="reports/Grid" label_caption="&lt;span class='rn_ScreenReaderOnly'>#rn:msg:YOUR_RECENTLY_SUBMITTED_QUESTIONS_LBL#&lt;/span>"/>
+                &lt;a href="/app/account/questions/list#rn:session#">#rn:msg:SEE_ALL_MY_SUPPORT_QUESTIONS_LBL#&lt;/a>
+            &lt;/rn:container>
+        &lt;/div>
+    
+    &lt;div id="rn_LoadingIndicator" class="rn_Browse">
+        &lt;rn:widget path="okcs/LoadingIndicator"/>
+    &lt;/div>
+    &lt;rn:container source_id="OKCSBrowse">
+        &lt;div class="rn_HeaderContainer">
+            &lt;h2>&lt;a class="rn_Profile" href="/app/account/recommendations/list#rn:session#">#rn:msg:MY_RECOMMENDATIONS_LBL#&lt;/a>&lt;/h2>
+        &lt;/div>
+        &lt;div id="rn_OkcsManageRecommendations">
+           &lt; rn:widget path="okcs/OkcsManageRecommendations"/>
+            &lt;a href="/app/account/recommendations/list#rn:session#">#rn:msg:SEE_ALL_RECOMMENDATIONS_LBL#&lt;/&lt;a>
+        &lt;/div>        
+    &lt;/rn:container>    
+&lt;/div>
+
+&lt;div class="rn_SideRail">
+    &lt;div class="rn_Well">
+        &lt;h3>#rn:msg:LINKS_LBL#&lt;/h3>
+        &lt;ul>
+            &lt;li>&lt;a href="/app/account/profile#rn:session#">#rn:msg:UPDATE_YOUR_ACCOUNT_SETTINGS_CMD#&lt;/a>&lt;/li>
+            &lt;rn:condition external_login_used="false">
+                &lt;rn:condition config_check="EU_CUST_PASSWD_ENABLED == true">
+                    &lt;li>&lt;a href="/app/account/change_password#rn:session#">#rn:msg:CHANGE_YOUR_PASSWORD_CMD#&lt;/a>&lt;/li>
+                &lt;/rn:condition>
+            &lt;/rn:condition>
+            &lt;li>&lt;a href="/app/account/notif/content_type_list#rn:session#">#rn:astr:Manage your content type answer notifications#&lt;/a>&lt;/li>
+            &lt;rn:condition is_active_social_user="true">
+                    &lt;li>&lt;a href="/app/public_profile/user/#rn:profile:socialUserID#">#rn:msg:VIEW_YOUR_PUBLIC_PROFILE_LBL#&lt;/a>&lt;/li>
+            &lt;/rn:condition>
+        &lt;/ul>
+    &lt;/div>
+&lt;/div></codeblock></context>
+</taskbody>
+</task>
